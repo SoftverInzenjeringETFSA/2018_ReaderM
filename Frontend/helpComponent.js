@@ -14,7 +14,7 @@ export default class Help extends React.Component {
         <ListItem key={"Dependencies " + i}>
           <Body>
             <Text style={styles.NormalText}>Name: <Text style={styles.NestedText}> {Dependencies[i].name} </Text> </Text>
-            <Text style={styles.NormalText}>Describtion: <Text style={styles.NestedText}> {Dependencies[i].describtion} </Text> </Text>
+            <Text style={styles.NormalText}>Description: <Text style={styles.NestedText}> {Dependencies[i].description} </Text> </Text>
             <Text style={styles.NormalText}>Link to docs:
               <Text style={styles.Hyperlink}> {Dependencies[i].doclink} </Text>
             </Text>
@@ -27,7 +27,7 @@ export default class Help extends React.Component {
         <ListItem key={"Components " + i}>
           <Body>
             <Text style={styles.NormalText}>Name: <Text style={styles.NestedText}> {Components[i].name} </Text> </Text>
-            <Text style={styles.NormalText}>Describtion: <Text style={styles.NestedText}> {Components[i].describtion} </Text> </Text>
+            <Text style={styles.NormalText}>Description: <Text style={styles.NestedText}> {Components[i].description} </Text> </Text>
           </Body>
         </ListItem>
       )
@@ -88,18 +88,18 @@ const styles = StyleSheet.create({
 
 
 const Components = [
-  {name: "App Component", describtion: "Root of the application, hold all other components and handles loading of assets."},
-  {name: "Help Component", describtion: "Responsible for displaying the developer help view and storing describtions about each component and dependencyq." }
+  {name: "App Component", description: "Root of the application, hold all other components and handles loading of assets."},
+  {name: "Help Component", description: "Responsible for displaying the developer help view and storing describtions about each component and dependency." }
 ];
 const Dependencies = [
   {
     name: "React Native",
-    describtion: "A javascript code library based on React that lets you build native Android and iOS applications.",
+    description: "A javascript code library based on React that lets you build native Android and iOS applications.",
     doclink: "facebook.github.io/react-native/docs/getting-started.html"
   },
   {
     name: "Native Base",
-    describtion: "Open source UI component library for React Native.",
+    description: "Open source UI component library for React Native.",
     doclink: "docs.nativebase.io"
   }
 ];
