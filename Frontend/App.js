@@ -1,18 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import  Help  from './helpComponent.js'
+
 
 export default class App extends React.Component {
+  state = { fontsAreLoaded: false };
   render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
+  return (
+        <Help />
+      );
   }
+async componentWillMount() {
+  await Expo.Font.loadAsync({
+    'Roboto': require('native-base/Fonts/Roboto.ttf'),
+    'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf'),
+  }).then(() => this.setState({fontsAreLoaded: true }));
 }
-
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
