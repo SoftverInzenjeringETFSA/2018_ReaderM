@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import  Help  from './helpComponent.js'
-
+import Help  from './components/help/help.js'
+import Navigation from './components/navigation/navigation.js';
 
 export default class App extends React.Component {
   state = { fontsAreLoaded: false };

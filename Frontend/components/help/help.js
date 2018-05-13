@@ -1,9 +1,10 @@
-import React, {Component} from 'react'
-//import {connect} from 'react-redux'
-import {TouchableOpacity, StyleSheet, Linking} from 'react-native'
+import React, { Component } from 'react'
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, List, ListItem } from 'native-base';
 
-export default class Help extends React.Component {
+import styles from './helpStyle.js';
+
+
+export default class Help extends Component {
 
   render() {
     var DependenciesItems = [];
@@ -61,30 +62,6 @@ export default class Help extends React.Component {
     )
   }
 }
-
-function mapStateToProps(state){
-  return {
-    user: state.user
-  }
-}
-const styles = StyleSheet.create({
-  HeaderText: {
-    color: '#fff'
-  },
-  NormalText: {
-    fontSize: 14,
-    fontWeight: 'bold'
-  },
-  NestedText: {
-    color: "#333",
-    fontWeight: 'normal'
-  },
-  Hyperlink: {
-    color: "#44f",
-    fontWeight: 'normal'
-
-  }
-})
 
 
 const Components = [
