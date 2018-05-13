@@ -44,7 +44,7 @@ export default class Help extends Component {
           <Right />
         </Header>
         <Content>
-          <List >
+          <List pointerEvents='box-only'>
             <ListItem itemHeader>
               <Text>Components </Text>
             </ListItem>
