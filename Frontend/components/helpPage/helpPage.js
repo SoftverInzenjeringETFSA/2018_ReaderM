@@ -1,7 +1,13 @@
-import React, { Component } from 'react'
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, List, ListItem } from 'native-base';
+/*
+  Autor: Muhamed Delaić
+  Ime: helpPage.js
+  Uloga: Pogled namjenjen da pomogne developerima, sadrži listu svih controllera, modela i pogleda kao i dependency-a
+*/
 
-import styles from './helpStyle.js';
+import React, { Component } from 'react'
+import { Container, Header, Content, Button, Left, Right, Body, Icon, Text, List, ListItem, Title } from 'native-base';
+
+import styles from './style.js';
 
 
 export default class Help extends Component {
@@ -37,14 +43,18 @@ export default class Help extends Component {
     return (
       <Container>
         <Header>
-          <Left />
+          <Left>
+            <Button transparent onPress={() => {}}>
+              <Icon type="Entypo"name="menu" style={{color:'#fff'}} />
+            </Button>
+          </Left>
           <Body>
-            <Text style={styles.HeaderText}> Developer Help</Text>
+            <Title style={styles.HeaderText}> Developer Help</Title>
           </Body>
           <Right />
         </Header>
         <Content>
-          <List >
+          <List pointerEvents='box-only'>
             <ListItem itemHeader>
               <Text>Components </Text>
             </ListItem>
@@ -66,7 +76,9 @@ export default class Help extends Component {
 
 const Components = [
   {name: "App Component", description: "Root of the application, hold all other components and handles loading of assets."},
-  {name: "Help Component", description: "Responsible for displaying the developer help view and storing describtions about each component and dependency." }
+  {name: "RouterWrapper Component", description: "Handles all logic for routing and navigation"},
+  {name: "Navigation Component", description: "Sidebar view with all the logic."},
+  {name: "HelpPage Component", description: "Responsible for displaying the developer help view and storing describtions about each component and dependency." }
 ];
 const Dependencies = [
   {
@@ -78,5 +90,11 @@ const Dependencies = [
     name: "Native Base",
     description: "Open source UI component library for React Native.",
     doclink: "docs.nativebase.io"
+  },
+  {
+    name: "React Router Native",
+    description: "React Router is a collection of navigational components that compose declaratively with your application.",
+    doclink: "reacttraining.com/react-router/native/"
   }
+
 ];
