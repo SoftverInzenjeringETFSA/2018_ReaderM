@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Help from './components/help/help.js'
 import RouterWrapper from './components/routerWrapper/routerWrapper.js';
 
 export default class App extends React.Component {
