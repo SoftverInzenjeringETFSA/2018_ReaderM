@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
-import { View, Text } from 'native-base';
+import { View, Text, Container, Header, Body, Left, Icon, Title, Right, Content } from 'native-base';
 
 export default class PdfViewerPage extends Component{
 
   render(){
     return(
-      <View>
-        <Text>{ '\n\n' + 'Pdf Viewer Page' }</Text>
-      </View>
+      <Container>
+        <Header>
+          <Left>
+            <Icon type="Entypo" name="menu" style={{ color:'#fff' }} />
+          </Left>
+          <Body>
+            <Title style={{ color:'#fff' }}> Reader </Title>
+          </Body>
+          <Right />
+        </Header>
+        <Content>
+        </Content>
+      </Container>
     );
   }
 }

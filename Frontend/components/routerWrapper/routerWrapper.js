@@ -40,14 +40,14 @@ export default class RouterWrapper extends Component {
             type="overlay"
             acceptPan={true}
             ref={(ref) => { this.drawer = ref; }}
-            content={<Navigation history={history} />}
-            panOpenMask={.25}
-            >
+            content={<Navigation history={history} closeDrawer={ closeDrawer } />}
+            panOpenMask={.9} >
+
             <Switch>
               <Route exact path="/" component={LoginPage} />
               <Route exact path="/PdfViewer" component={PdfViewerPage} />
               <Route exact path="/FavouriteQuotes" component={FavouriteQuotesPage} />
-              <Route exact path="/Help" component={Help}/>
+              <Route exact path="/Help" component={Help} />
             </Switch>
           </Drawer>
         </Router>

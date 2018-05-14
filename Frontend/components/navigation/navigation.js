@@ -17,6 +17,7 @@ export default class Navigation extends Component {
 // tj. ukoliko je korisnik na HelpPage treba zabranici da ode na HelpPage
   moveToPage(pageName){
     this.props.history.replace(pageName);
+    this.props.closeDrawer();
   }
 // TODO: srediti izgled, staviti ljepse ikone
   render(){
@@ -27,7 +28,7 @@ export default class Navigation extends Component {
             <Col>
               <H1 style={styles.navigationHeader}>Johnny Guitar </H1>
               <List>
-                <ListItem icon button={true} onPress={() => { this.moveToPage('PdfViewer')}}>
+                <ListItem icon button={true} onPress={() => { this.moveToPage('PdfViewer');}}>
                   <Left>
                     <Icon type="FontAwesome" name="file-pdf-o"/>
                   </Left>

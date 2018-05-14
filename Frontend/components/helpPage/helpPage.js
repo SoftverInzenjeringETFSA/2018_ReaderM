@@ -5,7 +5,7 @@
 */
 
 import React, { Component } from 'react'
-import { Container, Header, Content, Button, Left, Right, Body, Icon, Text, List, ListItem } from 'native-base';
+import { Container, Header, Content, Button, Left, Right, Body, Icon, Text, List, ListItem, Title } from 'native-base';
 
 import styles from './style.js';
 
@@ -44,9 +44,12 @@ export default class Help extends Component {
       <Container>
         <Header>
           <Left>
+            <Button transparent onPress={() => {}}>
+              <Icon type="Entypo"name="menu" style={{color:'#fff'}} />
+            </Button>
           </Left>
           <Body>
-            <Text style={styles.HeaderText}> Developer Help</Text>
+            <Title style={styles.HeaderText}> Developer Help</Title>
           </Body>
           <Right />
         </Header>
