@@ -9,7 +9,7 @@ export default class PdfViewerPage extends Component{
   /*
         Dokument ima atribute: ime, opis, direktoriji, datum_upload-a, datum_posljednjeg_citanja, korisni_id
 */
-  this.naziv () {
+  naziv () {
     fetch('http://localhost:5000/savePDF', {
       method: 'POST',
       headers: {
@@ -36,14 +36,16 @@ export default class PdfViewerPage extends Component{
           <Right />
         </Header>
         <Content>
-          <ActionButton buttonColor="rgba(231,76,60,1)">
-            <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
-              <Icon name="md-quote" style={styles.actionButtonIcon} />
-            </ActionButton.Item>
-            <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={this.naziv()}>
-              <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
-            </ActionButton.Item>
-          </ActionButton>
+          <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
+            <ActionButton buttonColor="rgba(231,76,60,1)">
+              <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
+                <Icon name="md-quote" style={styles.actionButtonIcon} />
+              </ActionButton.Item>
+              <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={() => {}}>
+                <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
+              </ActionButton.Item>
+            </ActionButton>
+          </View>
         </Content>
       </Container>
     );
