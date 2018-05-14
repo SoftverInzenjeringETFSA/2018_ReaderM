@@ -2,12 +2,16 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Help  from './components/help/help.js'
 import Navigation from './components/navigation/navigation.js';
+import PDFviewer from './components/pdfViewer/pdfViewer.js';
+
+
+
 
 export default class App extends React.Component {
   state = { fontsAreLoaded: false };
   render() {
   return (
-        <Help />
+        <PDFviewer />
       );
   }
 async componentWillMount() {
