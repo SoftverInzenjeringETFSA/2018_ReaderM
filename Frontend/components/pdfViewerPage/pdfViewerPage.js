@@ -5,21 +5,24 @@ import ActionButton from 'react-native-action-button';
 import styles from './style.js';
 
 export default class PdfViewerPage extends Component{
-  //provjeriti da li treba this kod deklaracije i poyiva funkcije
+  //provjeriti da li treba this kod deklaracije i poziva funkcije
   /*
-        Dokument ima atribute: ime, opis, direktoriji, datum_upload-a, datum_posljednjeg_citanja, korisni_id
+        Dokument u bazi ima atribute: ime, opis, direktoriji, datum_upload-a, datum_posljednjeg_citanja, korisni_id
+        Obzirom da se vecina ovih atributa automatski generira u bazu, potrebno je proslijediti samo naziv dokumenta, sadrzaj i id korisnika
 */
   naziv () {
-    fetch('http://localhost:5000/savePDF', {
-      method: 'POST',
-      headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    ime: 'yourValue',
-    sadrzaj: 'yourOtherValue',
-  }),
+    fetch('http://localhost:5000/savePDF',
+    {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
+      body: JSON.stringify({
+          ime: 'yourValue',
+          opis: 'yourOtherValue',
+          id: 'neki broj'
+          })
   });
 
   }
