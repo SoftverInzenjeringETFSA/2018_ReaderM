@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Alert } from 'react-native';
 import { View, Text, Container, Header, Body, Left, Icon, Title, Right, Content } from 'native-base';
-<<<<<<< HEAD
-import RNFetchBlob from 'react-native-fetch-blob';
-=======
+//import RNFetchBlob from 'react-native-fetch-blob';
 import ActionButton from 'react-native-action-button';
-
-import styles from './style.js';
->>>>>>> ef6986163b601c5760161234f7029f3b149d7ce3
 
 export default class PdfViewerPage extends Component{
   /*
@@ -15,7 +10,7 @@ export default class PdfViewerPage extends Component{
         Dokument u bazi ima atribute: ime, opis, direktoriji, datum_upload-a, datum_posljednjeg_citanja, korisni_id
         Obzirom da se vecina ovih atributa automatski generira u bazu, potrebno je proslijediti samo naziv dokumenta, sadrzaj i id korisnika
         Funkciju 'spremi_na_web' pozivam kod button-a 'save online' 
-*/
+*/ 
   spremi_na_web () {
     fetch('http://localhost:5000/savePDF',
     {
@@ -31,7 +26,7 @@ export default class PdfViewerPage extends Component{
           })
   });
 
-  }
+  } 
   render(){
     return(
       <Container>
@@ -47,7 +42,7 @@ export default class PdfViewerPage extends Component{
               Alert.alert('test!');
               // Kod za download pdf file-a
               // send http request in a new thread (using native code)
-            RNFetchBlob.fetch('GET', 'https://ufile.io/k6r5m', {
+            /*RNFetchBlob.fetch('GET', 'https://ufile.io/k6r5m', {
               Authorization : 'Bearer access-token...',
               // more headers  ..
             })
@@ -63,7 +58,7 @@ export default class PdfViewerPage extends Component{
             // Status code is not 200
             .catch((errorMessage, statusCode) => {
               // error handling
-            })
+            })*/
             }                       
             }
             title="Save">Save
