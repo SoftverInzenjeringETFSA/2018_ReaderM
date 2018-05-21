@@ -20,9 +20,10 @@ fetch('http://192.168.0.13:5000/savePDF', {
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    firstParam: 'yourValue',
-    secondParam: 'yourOtherValue',
-    }),
+    ime: 'yourValue',
+    opis: 'yourOtherValue',
+    id: '145'
+    })
   });
 }
 
@@ -42,7 +43,7 @@ fetch('http://192.168.0.13:5000/savePDF', {
     return(
       <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
       <ActionButton buttonColor="rgba(231,76,60,1)">
-        <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => {}}> 
+        <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => {}}>
            <Icon name="md-create" style={styles.actionButtonIcon} />
          </ActionButton.Item>
         <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
