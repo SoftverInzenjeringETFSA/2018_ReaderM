@@ -31,15 +31,10 @@ export default class PdfViewerPage extends Component{
         throw error;
     });
 
-<<<<<<< HEAD
-  }
-=======
 }
->>>>>>> a749e488ba2016bc4208fdbb948d54e17b57e2cb
   render(){
     const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
     return(
-<<<<<<< HEAD
       <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
       <Container>
         <Header>
@@ -94,20 +89,6 @@ export default class PdfViewerPage extends Component{
         </ActionButton.Item>
       </ActionButton>
     </View>
-=======
-
-      <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
-       {/* Rest of the app comes ABOVE the action button component !*/}
-       <ActionButton buttonColor="rgba(231,76,60,1)">
-         <ActionButton.Item buttonColor='#9b59b6' title="Mark text" onPress={() => console.log("notes tapped!")}>
-           <Icon name="md-quote" style={styles.actionButtonIcon} />
-         </ActionButton.Item>
-         <ActionButton.Item buttonColor='#3498db' title="Save online" onPress={() => {}}>
-           <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
-         </ActionButton.Item>
-       </ActionButton>
-     </View>
->>>>>>> a749e488ba2016bc4208fdbb948d54e17b57e2cb
     );
   }
 }
