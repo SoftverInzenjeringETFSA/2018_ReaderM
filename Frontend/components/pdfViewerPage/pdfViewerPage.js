@@ -13,6 +13,7 @@ export default class PdfViewerPage extends Component{
 */
  spremi_na_web = function(){
 
+<<<<<<< HEAD
 console.log("Usao u funkciju spremi na web!");
 fetch('http://192.168.0.13:5000/savePDF', {
   method: 'POST',
@@ -26,6 +27,18 @@ fetch('http://192.168.0.13:5000/savePDF', {
     }),
   });
 }
+=======
+    saveToDevice = function () {
+        console.log("Usao u funkciju spremi na uredjaj!");
+        fetch('http://80.65.65.76:5000/savePdfToMobile?dir=./pdfs/WedMay162018225630GMT0200CentralEuropeanDaylightTime43.pdf', {
+            method: 'GET',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/pdfs',
+            }
+        });
+    }
+>>>>>>> 1d1f12acba4c1351ed6dd99bd5ad7a50d60b6037
 
   render(){
     //const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
@@ -46,4 +59,28 @@ fetch('http://192.168.0.13:5000/savePDF', {
     );
   }
 
+<<<<<<< HEAD
+=======
+//});
+    render() {
+        const source = {uri: 'http://samples.leanpub.com/thereactnativebook-sample.pdf', cache: true};
+        return (
+            <View style={{flex: 1, backgroundColor: '#f3f3f3'}}>
+                <ActionButton buttonColor="rgba(231,76,60,1)">
+                    <ActionButton.Item buttonColor='#9b59b6' title="Save to device"
+                                       onPress={() => this.saveToDevice()}>
+                        <Icon name="md-create" style={styles.actionButtonIcon}/>
+                    </ActionButton.Item>
+                    <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {
+                    }}>
+                        <Icon name="md-quote" style={styles.actionButtonIcon}/>
+                    </ActionButton.Item>
+                    <ActionButton.Item buttonColor='#1abc9c' title="Save online" onPress={this.spremi_na_web()}>
+                        <Icon type="Entypo" name="save" style={styles.actionButtonIcon}/>
+                    </ActionButton.Item>
+                </ActionButton>
+            </View>
+        );
+    }
+>>>>>>> 1d1f12acba4c1351ed6dd99bd5ad7a50d60b6037
 }
