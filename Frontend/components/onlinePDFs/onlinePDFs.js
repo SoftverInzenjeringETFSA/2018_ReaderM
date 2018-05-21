@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import { Container, Header, Content, Icon, Footer, FooterTab, Button, Left, Right } from 'native-base';
 
-class OnlinePDFs extends Component{
+class OnlinePregledScreen extends Component{
     state = {
       data: [{name: 'The Cathedral'}, {name: 'Ježeva kućica'}, {name: 'Unity Guide'}, {name: 'Osnove digitalnih računara'}]
     };
@@ -12,7 +12,7 @@ class OnlinePDFs extends Component{
     }
 
     fetchData = async () => {
-      const response = await fetch('http://localhost:3000/listPDF');
+      const response = await fetch('http://localhost:3000/PregledDokumenata');
       const json = await response.json();
       this.setState({ data: json.ime });
     };
@@ -22,7 +22,9 @@ class OnlinePDFs extends Component{
         <Container>
           <Header style={styles.header}>
             <Left style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-              <Icon type="Entypo" name="menu" style={{ color:'#fff' }} />
+              <TouchableOpacity onPress={() => this.props.history.replace('/')}>
+                <Icon type="Entypo" name="menu" style={{ color:'#fff' }} />
+              </TouchableOpacity>
               <Text style={{color: 'white', fontSize: 22, paddingLeft: 30}}>Reader</Text>
             </Left>
             <Right>
@@ -34,7 +36,10 @@ class OnlinePDFs extends Component{
               <FlatList style={styles.lista}
                 data = {this.state.data}
                 keyExtractor = {(x, index) => index}
-                renderItem = {({item}) => <TouchableOpacity onPress={() => this.props.navigation.navigate('PDFScreen', {pdf: item.name})}>
+                renderItem = {({item}) => <TouchableOpacity onPress={() => this.props.history.push({
+                                                                                                    pathname: '/PdfViewer',
+                                                                                                    state: { detail: item.name }
+                                                                                                  })}>
                                             <View style={styles.elementListe}>
                                               <Icon type="FontAwesome" name="file-pdf-o" />
                                               <Text style={{paddingLeft: 25, fontSize: 20}}>{item.name}</Text>
@@ -45,7 +50,7 @@ class OnlinePDFs extends Component{
           </Content>
           <Footer>
             <FooterTab style={styles.footer}>
-              <Button style={{borderBottomWidth: 1, borderBottomColor: 'white'}}>
+              <Button style={{borderBottomWidth: 2, borderBottomColor: 'white'}}>
               <Text style={{color: 'white', fontSize: 18}}>Online documents</Text>
               </Button>
               <Button>
@@ -58,7 +63,7 @@ class OnlinePDFs extends Component{
     }
 }
 
-export default OnlinePDFs;
+export default OnlinePregledScreen;
 
 
 const styles = StyleSheet.create({
