@@ -40,11 +40,10 @@ fetch('http://192.168.0.13:5000/savePDF', {
 
 
   render(){
-    //const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
     return(
       <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
       <ActionButton buttonColor="rgba(231,76,60,1)">
-        <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => console.log("notes tapped!")}>
+        <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={this.saveToDevice}> //poziva se f-ja koja nije testirana
            <Icon name="md-create" style={styles.actionButtonIcon} />
          </ActionButton.Item>
         <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
@@ -57,27 +56,4 @@ fetch('http://192.168.0.13:5000/savePDF', {
     </View>
     );
   }
-
-
-//});
-    render() {
-        const source = {uri: 'http://samples.leanpub.com/thereactnativebook-sample.pdf', cache: true};
-        return (
-            <View style={{flex: 1, backgroundColor: '#f3f3f3'}}>
-                <ActionButton buttonColor="rgba(231,76,60,1)">
-                    <ActionButton.Item buttonColor='#9b59b6' title="Save to device"
-                                       onPress={() => this.saveToDevice()}>
-                        <Icon name="md-create" style={styles.actionButtonIcon}/>
-                    </ActionButton.Item>
-                    <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {
-                    }}>
-                        <Icon name="md-quote" style={styles.actionButtonIcon}/>
-                    </ActionButton.Item>
-                    <ActionButton.Item buttonColor='#1abc9c' title="Save online" onPress={this.spremi_na_web()}>
-                        <Icon type="Entypo" name="save" style={styles.actionButtonIcon}/>
-                    </ActionButton.Item>
-                </ActionButton>
-            </View>
-        );
-    }
 }
