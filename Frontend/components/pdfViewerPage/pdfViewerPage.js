@@ -10,7 +10,7 @@ export default class PdfViewerPage extends Component{
         Obzirom da se vecina ovih atributa automatski generira u bazu, potrebno je proslijediti samo naziv dokumenta, sadrzaj i id korisnika
         Funkciju 'spremi_na_web' pozivam kod button-a 'save online'
 */
-function spremi_na_web(){
+ spremi_na_web = function(){
 
 console.log("Usao u funkciju spremi na web!");
 fetch('http:localhost:5000/savePDF', {
@@ -53,10 +53,10 @@ fetch('http:localhost:5000/savePDF', {
     const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
     return(
       <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
-      <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => console.log("notes tapped!")}>
-           <Icon name="md-create" style={styles.actionButtonIcon} />
-         </ActionButton.Item>
       <ActionButton buttonColor="rgba(231,76,60,1)">
+          <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => console.log("notes tapped!")}>
+              <Icon name="md-create" style={styles.actionButtonIcon} />
+          </ActionButton.Item>
         <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
           <Icon name="md-quote" style={styles.actionButtonIcon} />
         </ActionButton.Item>
