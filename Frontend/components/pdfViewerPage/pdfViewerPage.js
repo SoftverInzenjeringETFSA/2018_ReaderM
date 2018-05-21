@@ -14,7 +14,7 @@ export default class PdfViewerPage extends Component{
  spremi_na_web = function(){
 
 console.log("Usao u funkciju spremi na web!");
-fetch('http:localhost:27017', {
+fetch('http://192.168.0.13:5000/savePDF', {
   method: 'POST',
   headers: {
     Accept: 'application/json',
