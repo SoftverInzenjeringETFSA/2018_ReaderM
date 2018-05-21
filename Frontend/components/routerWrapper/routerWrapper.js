@@ -44,7 +44,7 @@ export default class RouterWrapper extends Component {
             panOpenMask={.9} >
 
             <Switch>
-            //  <Route exact path="/" component={LoginPage} />
+              <Route exact path="/" component={LoginPage} />
               <Route exact path="/PdfViewer" component={PdfViewerPage} />
               <Route exact path="/FavouriteQuotes" component={FavouriteQuotesPage} />
               <Route exact path="/Help" component={Help} />
