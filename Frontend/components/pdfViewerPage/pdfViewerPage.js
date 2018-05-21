@@ -1,27 +1,30 @@
 import React, { Component } from 'react';
+import { Button, Alert } from 'react-native';
 import { View, Text, Container, Header, Body, Left, Icon, Title, Right, Content } from 'native-base';
 import ActionButton from 'react-native-action-button';
-import Pdf from 'react-native-pdf';
-
-import styles from './style.js';
 
 export default class PdfViewerPage extends Component{
-  //provjeriti da li treba this kod deklaracije i poyiva funkcije
   /*
-        Dokument ima atribute: ime, opis, direktoriji, datum_upload-a, datum_posljednjeg_citanja, korisni_id
+        Provjeriti da li treba 'this' kod deklaracije i poziva funkcije
+        Dokument u bazi ima atribute: ime, opis, direktoriji, datum_upload-a, datum_posljednjeg_citanja, korisni_id
+        Obzirom da se vecina ovih atributa automatski generira u bazu, potrebno je proslijediti samo naziv dokumenta, sadrzaj i id korisnika
+        Funkciju 'spremi_na_web' pozivam kod button-a 'save online'
 */
-  naziv () {
-    fetch('http://localhost:5000/savePDF', {
-      method: 'POST',
-      headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-      },
+  spremi_na_web () {
+    fetch('http://localhost:5000/savePDF',
+    {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+          },
       body: JSON.stringify({
-        ime: 'yourValue',
-        sadrzaj: 'yourOtherValue',
-      })
-    });
+          ime: 'yourValue',
+          opis: 'yourOtherValue',
+          id: 'neki broj'
+          })
+  });
+
   }
   render(){
     const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
@@ -32,25 +35,43 @@ export default class PdfViewerPage extends Component{
           <Left>
             <Icon type="Entypo" name="menu" style={{ color:'#fff' }} />
           </Left>
+          <View>
+          <Button
+            style={{fontSize: 20, color: 'green'}}
+            styleDisabled={{color: 'red'}}
+            onPress={() => {
+              Alert.alert('test!');
+              // Kod za download pdf file-a
+              // send http request in a new thread (using native code)
+            /*RNFetchBlob.fetch('GET', 'https://ufile.io/k6r5m', {
+              Authorization : 'Bearer access-token...',
+              // more headers  ..
+            })
+            // when response status code is 200
+            .then((res) => {
+              // the conversion is done in native code$ npm install --save react-native-fetch-blog@0.6.3-dev.1
+              let base64Str = res.base64()
+              // the following conversions are done in js, it's SYNC
+              let text = res.text()
+              let json = res.json()
+
+            })
+            // Status code is not 200
+            .catch((errorMessage, statusCode) => {
+              // error handling
+            })
+            */
+            }
+            }
+            title="Save">Save
+            </Button>
+          </View>
           <Body>
             <Title style={{ color:'#fff' }}> Reader </Title>
           </Body>
           <Right />
         </Header>
         <Content>
-        <Pdf
-          source={source}
-          onLoadComplete={(numberOfPages,filePath)=>{
-             console.log(`number of pages: ${numberOfPages}`);
-          }}
-          onPageChanged={(page,numberOfPages)=>{
-             console.log(`current page: ${page}`);
-          }}
-          onError={(error)=>{
-             console.log(error);
-          }}
-          fitWidth={true}
-         />
         </Content>
       </Container>
       <ActionButton buttonColor="rgba(231,76,60,1)">
