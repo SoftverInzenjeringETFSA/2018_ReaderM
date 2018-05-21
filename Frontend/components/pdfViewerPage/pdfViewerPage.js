@@ -10,6 +10,23 @@ export default class PdfViewerPage extends Component{
         Obzirom da se vecina ovih atributa automatski generira u bazu, potrebno je proslijediti samo naziv dokumenta, sadrzaj i id korisnika
         Funkciju 'spremi_na_web' pozivam kod button-a 'save online'
 */
+function spremi_na_web(){
+
+console.log("Usao u funkciju spremi na web!");
+fetch('http:localhost:5000/savePDF', {
+  method: 'POST',
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    firstParam: 'yourValue',
+    secondParam: 'yourOtherValue',
+  }),
+});
+}
+
+/*
   spremi_na_web () {
   return  fetch('http://localhost:5000/savePDF',
     {
@@ -23,69 +40,28 @@ export default class PdfViewerPage extends Component{
           opis: 'yourOtherValue',
           id: 'neki broj'
           })
-  }).then(function(response)
+  } /*).then(function(response)
     {
         return response.json();
     }).catch(function(error){
         console.log("Greska u funkciji spremi na web! U pitanju je greška: ");
         throw error;
-    });
+    }); */
 
-}
+//});
   render(){
     const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
     return(
       <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
-      <Container>
-        <Header>
-          <Left>
-            <Icon type="Entypo" name="menu" style={{ color:'#fff' }} />
-          </Left>
-          <View>
-          <Button
-            style={{fontSize: 20, color: 'green'}}
-            styleDisabled={{color: 'red'}}
-            onPress={() => {
-              Alert.alert('test!');
-              // Kod za download pdf file-a
-              // send http request in a new thread (using native code)
-            /*RNFetchBlob.fetch('GET', 'https://ufile.io/k6r5m', {
-              Authorization : 'Bearer access-token...',
-              // more headers  ..
-            })
-            // when response status code is 200
-            .then((res) => {
-              // the conversion is done in native code$ npm install --save react-native-fetch-blog@0.6.3-dev.1
-              let base64Str = res.base64()
-              // the following conversions are done in js, it's SYNC
-              let text = res.text()
-              let json = res.json()
-
-            })
-            // Status code is not 200
-            .catch((errorMessage, statusCode) => {
-              // error handling
-            })
-            */
-            }
-            }
-            title="Save">Save
-            </Button>
-          </View>
-          <Body>
-            <Title style={{ color:'#fff' }}> Reader </Title>
-          </Body>
-          <Right />
-        </Header>
-        <Content>
-        </Content>
-      </Container>
+      <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => console.log("notes tapped!")}>
+           <Icon name="md-create" style={styles.actionButtonIcon} />
+         </ActionButton.Item>
       <ActionButton buttonColor="rgba(231,76,60,1)">
         <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
           <Icon name="md-quote" style={styles.actionButtonIcon} />
         </ActionButton.Item>
-        <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={() => {}}>
-          <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
+        <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={this.spremi_na_web()}>
+          <Icon type="Entypo" name="save" style={styles.actionButtonIcon}/>
         </ActionButton.Item>
       </ActionButton>
     </View>
