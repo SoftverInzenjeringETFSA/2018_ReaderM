@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, Container, Header, Body, Left, Icon, Title, Right, Content } from 'native-base';
 import ActionButton from 'react-native-action-button';
+import Pdf from 'react-native-pdf';
 
 import styles from './style.js';
 
@@ -15,16 +16,17 @@ export default class PdfViewerPage extends Component{
       headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    ime: 'yourValue',
-    sadrzaj: 'yourOtherValue',
-  }),
-  });
-
+      },
+      body: JSON.stringify({
+        ime: 'yourValue',
+        sadrzaj: 'yourOtherValue',
+      })
+    });
   }
   render(){
+    const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
     return(
+      <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
       <Container>
         <Header>
           <Left>
@@ -36,18 +38,30 @@ export default class PdfViewerPage extends Component{
           <Right />
         </Header>
         <Content>
-          <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
-            <ActionButton buttonColor="rgba(231,76,60,1)">
-              <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
-                <Icon name="md-quote" style={styles.actionButtonIcon} />
-              </ActionButton.Item>
-              <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={() => {}}>
-                <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
-              </ActionButton.Item>
-            </ActionButton>
-          </View>
+        <Pdf
+          source={source}
+          onLoadComplete={(numberOfPages,filePath)=>{
+             console.log(`number of pages: ${numberOfPages}`);
+          }}
+          onPageChanged={(page,numberOfPages)=>{
+             console.log(`current page: ${page}`);
+          }}
+          onError={(error)=>{
+             console.log(error);
+          }}
+          fitWidth={true}
+         />
         </Content>
       </Container>
+      <ActionButton buttonColor="rgba(231,76,60,1)">
+        <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
+          <Icon name="md-quote" style={styles.actionButtonIcon} />
+        </ActionButton.Item>
+        <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={() => {}}>
+          <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
+        </ActionButton.Item>
+      </ActionButton>
+    </View>
     );
   }
 }
