@@ -13,7 +13,6 @@ export default class PdfViewerPage extends Component{
 */
  spremi_na_web = function(){
 
-<<<<<<< HEAD
 console.log("Usao u funkciju spremi na web!");
 fetch('http://192.168.0.13:5000/savePDF', {
   method: 'POST',
@@ -27,7 +26,7 @@ fetch('http://192.168.0.13:5000/savePDF', {
     }),
   });
 }
-=======
+
     saveToDevice = function () {
         console.log("Usao u funkciju spremi na uredjaj!");
         fetch('http://80.65.65.76:5000/savePdfToMobile?dir=./pdfs/WedMay162018225630GMT0200CentralEuropeanDaylightTime43.pdf', {
@@ -38,7 +37,7 @@ fetch('http://192.168.0.13:5000/savePDF', {
             }
         });
     }
->>>>>>> 1d1f12acba4c1351ed6dd99bd5ad7a50d60b6037
+
 
   render(){
     //const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
@@ -59,8 +58,7 @@ fetch('http://192.168.0.13:5000/savePDF', {
     );
   }
 
-<<<<<<< HEAD
-=======
+
 //});
     render() {
         const source = {uri: 'http://samples.leanpub.com/thereactnativebook-sample.pdf', cache: true};
@@ -82,5 +80,4 @@ fetch('http://192.168.0.13:5000/savePDF', {
             </View>
         );
     }
->>>>>>> 1d1f12acba4c1351ed6dd99bd5ad7a50d60b6037
 }
