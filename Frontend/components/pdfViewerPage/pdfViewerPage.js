@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { Button, Alert } from 'react-native';
-import { View, Text, Container, Header, Body, Left, Icon, Title, Right, Content } from 'native-base';
+import React, {Component} from 'react';
+import {Button, Alert} from 'react-native';
+import {View, Text, Container, Header, Body, Left, Icon, Title, Right, Content} from 'native-base';
 import ActionButton from 'react-native-action-button';
+
 
 export default class PdfViewerPage extends Component{
   /*
@@ -13,7 +14,7 @@ export default class PdfViewerPage extends Component{
  spremi_na_web = function(){
 
 console.log("Usao u funkciju spremi na web!");
-fetch('http:localhost:5000/savePDF', {
+fetch('http:localhost:27017', {
   method: 'POST',
   headers: {
     Accept: 'application/json',
@@ -27,7 +28,7 @@ fetch('http:localhost:5000/savePDF', {
 }
 
   render(){
-    const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
+    //const source = {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf',cache:true};
     return(
       <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
       <ActionButton buttonColor="rgba(231,76,60,1)">
@@ -44,4 +45,5 @@ fetch('http:localhost:5000/savePDF', {
     </View>
     );
   }
+
 }
