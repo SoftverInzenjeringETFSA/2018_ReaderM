@@ -1,15 +1,10 @@
 import React, {Component} from 'react';
-import {Button, Alert} from 'react-native';
-import {View, Text, Container, Header, Body, Left, Icon, Title, Right, Content} from 'native-base';
+import {Button, Alert, TouchableOpacity } from 'react-native';
+import {View, Text, Icon, Title} from 'native-base';
 import ActionButton from 'react-native-action-button';
-
+import styles from './style.js';
 
 export default class PdfViewerPage extends Component{
-  /*
-        Dokument u bazi ima atribute: ime, opis, direktoriji, datum_upload-a, datum_posljednjeg_citanja, korisni_id
-        Obzirom da se vecina ovih atributa automatski generira u bazu, potrebno je proslijediti samo naziv dokumenta, sadrzaj i id korisnika
-        Funkciju 'spremi_na_web' pozivam kod button-a 'save online'
-*/
  spremi_na_web = function(){
 
 console.log("Usao u funkciju spremi na web!");
@@ -38,22 +33,32 @@ fetch('http://192.168.0.13:5000/savePDF', {
         });
     }
 
+    // Za pristup za nazivu pdf-a koji se učitava, koristiti {this.props.location.state.detail}
 
   render(){
     return(
-      <View style={{flex:1, backgroundColor: '#f3f3f3'}}>
-      <ActionButton buttonColor="rgba(231,76,60,1)">
-        <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => {}}>
-           <Icon name="md-create" style={styles.actionButtonIcon} />
-         </ActionButton.Item>
-        <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
-          <Icon name="md-quote" style={styles.actionButtonIcon} />
-        </ActionButton.Item>
-        <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={this.spremi_na_web}>
-          <Icon type="Entypo" name="save" style={styles.actionButtonIcon}/>
-        </ActionButton.Item>
-      </ActionButton>
-    </View>
+      <View style={{flex: 1}}>
+        <View style={styles.header}>
+          <TouchableOpacity onPress={() => this.props.history.replace('/')}>
+            <Icon type="Entypo" name="menu" style={{ color:'#fff', paddingLeft: 10, paddingTop: 14 }} />
+          </TouchableOpacity>
+          <Text style={{color: 'white', fontSize: 22, paddingRight: 210, paddingTop: 14}}>Reader</Text>
+          <Icon type="Feather" name="search" style={{ color:'#fff', paddingRight: 16, paddingTop: 14 }}/>
+        </View>
+        <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
+          <ActionButton buttonColor="#3498DB">
+            <ActionButton.Item buttonColor='rgba(231,76,60,1)' title="Mark text" onPress={() => {}}>
+              <Icon name="md-quote" style={styles.actionButtonIcon} />
+            </ActionButton.Item>
+            <ActionButton.Item buttonColor='#9b59b6' title="Save online" onPress={this.spremi_na_web}>
+              <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
+            </ActionButton.Item>
+              <ActionButton.Item buttonColor='#1abc9c' title="Save to device" onPress={() => {}}>
+              <Icon type="Entypo" name="download" style={styles.actionButtonIcon}/>
+            </ActionButton.Item>
+          </ActionButton>
+        </View>
+      </View>
     );
   }
 }
