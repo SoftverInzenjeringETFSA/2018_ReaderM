@@ -16,6 +16,7 @@ import PdfViewerPage from '../pdfViewerPage/pdfViewerPage.js';
 import FavouriteQuotesPage from '../favouriteQuotesPage/favouriteQuotesPage.js';
 import Navigation from '../navigation/navigation.js';
 import Help from '../helpPage/helpPage.js';
+import OnlinePDFs from '../onlinePDFs/onlinePDFs.js';
 
 
 // history je objekat koji dolazi uz react-router-native
@@ -48,6 +49,7 @@ export default class RouterWrapper extends Component {
               <Route exact path="/PdfViewer" component={PdfViewerPage} />
               <Route exact path="/FavouriteQuotes" component={FavouriteQuotesPage} />
               <Route exact path="/Help" component={Help} />
+              <Route exact path="/OnlinePDFs" component={OnlinePDFs} />
             </Switch>
           </Drawer>
         </Router>
