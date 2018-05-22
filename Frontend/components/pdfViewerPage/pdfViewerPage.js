@@ -15,10 +15,9 @@ fetch('http://192.168.0.13:5000/savePDF', {
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    ime: 'yourValue',
-    opis: 'yourOtherValue',
-    id: '145'
-    })
+    firstParam: 'yourValue',
+    secondParam: 'yourOtherValue',
+    }),
   });
 }
 
@@ -38,26 +37,29 @@ fetch('http://192.168.0.13:5000/savePDF', {
   render(){
     return(
       <View style={{flex: 1}}>
-        <View style={styles.header}>
+      
+        <View style={{flex: 1, marginTop: 24, backgroundColor: '#3498DB', flexDirection: 'row', justifyContent: 'space-between'}}>
           <TouchableOpacity onPress={() => this.props.history.replace('/')}>
             <Icon type="Entypo" name="menu" style={{ color:'#fff', paddingLeft: 10, paddingTop: 14 }} />
           </TouchableOpacity>
           <Text style={{color: 'white', fontSize: 22, paddingRight: 210, paddingTop: 14}}>Reader</Text>
           <Icon type="Feather" name="search" style={{ color:'#fff', paddingRight: 16, paddingTop: 14 }}/>
         </View>
+
         <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
           <ActionButton buttonColor="#3498DB">
-            <ActionButton.Item buttonColor='rgba(231,76,60,1)' title="Mark text" onPress={() => {}}>
+            <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => {}}>
+              <Icon name="md-create" style={styles.actionButtonIcon} />
+            </ActionButton.Item>
+            <ActionButton.Item buttonColor='#3498db' title="Mark text" onPress={() => {}}>
               <Icon name="md-quote" style={styles.actionButtonIcon} />
             </ActionButton.Item>
-            <ActionButton.Item buttonColor='#9b59b6' title="Save online" onPress={this.spremi_na_web}>
-              <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
-            </ActionButton.Item>
-              <ActionButton.Item buttonColor='#1abc9c' title="Save to device" onPress={() => {}}>
-              <Icon type="Entypo" name="download" style={styles.actionButtonIcon}/>
+              <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={this.spremi_na_web}>
+              <Icon type="Entypo" name="save" style={styles.actionButtonIcon}/>
             </ActionButton.Item>
           </ActionButton>
         </View>
+
       </View>
     );
   }
