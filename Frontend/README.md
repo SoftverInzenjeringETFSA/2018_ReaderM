@@ -6,12 +6,15 @@ Aplikacija primarno za mobitel razvijena pomoću React Native i ExpoKit
 Pokrenuti komande:
 
 npm install -g exp
-
 npm install
-
 Nakon npm install-a je potrebno kopirati sadržaj foldera node_modules_fix unutar node_modules.
 
+sudo exp detach ili samo exp detach za korisnike windowsa
+( Pratiti sve korake )
+
 Imati instaliran android studio.
+
+
 
 # Pokretanje
 
@@ -21,4 +24,5 @@ zatim otvoriti folder android unutar Frontend foldera i pokrenuti unutar njega
 
 # Dodatne informacije
 
-Ukoliko aplikacija traži da se uradi login, username je readerM i šifra je readerM
+Ukoliko se prilikom pokretanja unutar android studija pojavi greska da Android revision SDK nije dobre verzije:
+  izmjeniti unutar build.gradle( Module:app ) staviti da je targetSdkVersion 27 i instalirati potrebne dodatke.

@@ -3,6 +3,9 @@
 # expo
 Frontend/.expo/
 
+# android
+Frontend/android
+
 # dependencies
 Frontend/node_modules
 
