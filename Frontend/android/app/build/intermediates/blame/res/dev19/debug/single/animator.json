@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/animator/card_flip_left_in.xml",
+        "source": "/root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/res/animator/card_flip_left_in.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/animator/card_flip_left_out.xml",
+        "source": "/root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/res/animator/card_flip_left_out.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/animator/card_flip_right_in.xml",
+        "source": "/root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/res/animator/card_flip_right_in.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/animator/card_flip_right_out.xml",
+        "source": "/root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/res/animator/card_flip_right_out.xml"
+    }
+]

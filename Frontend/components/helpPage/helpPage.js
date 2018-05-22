@@ -5,7 +5,8 @@
 */
 
 import React, { Component } from 'react'
-import { Container, Header, Content, Button, Left, Right, Body, Icon, Text, List, ListItem, Title } from 'native-base';
+import { Container, Header, Content, Button, Left, Right, Body, Icon, Text, List, ListItem, Title, View } from 'native-base';
+import TopHeader from '../topHeader/topHeader.js';
 
 import styles from './style.js';
 
@@ -39,21 +40,22 @@ export default class Help extends Component {
         </ListItem>
       )
     }
+    // <Header>
+    // <Left>
+    // <Button transparent onPress={() => {}}>
+    // <Icon type="Entypo"name="menu" style={{color:'#fff'}} />
+    // </Button>
+    // </Left>
+    // <Body>
+    // <Title style={styles.HeaderText}> Developer Help</Title>
+    // </Body>
+    // <Right />
+    // </Header>
 
     return (
-      <Container>
-        <Header>
-          <Left>
-            <Button transparent onPress={() => {}}>
-              <Icon type="Entypo"name="menu" style={{color:'#fff'}} />
-            </Button>
-          </Left>
-          <Body>
-            <Title style={styles.HeaderText}> Developer Help</Title>
-          </Body>
-          <Right />
-        </Header>
-        <Content>
+      <View style={{flex:1}}>
+        <TopHeader title="Dev Help" openDrawer={ openDrawer } />
+        <View style={{flex:11}} >
           <List pointerEvents='box-only'>
             <ListItem itemHeader>
               <Text>Components </Text>
@@ -67,8 +69,8 @@ export default class Help extends Component {
             </ListItem>
             {DependenciesItems}
           </List>
-        </Content>
-      </Container>
+        </View>
+      </View>
     )
   }
 }

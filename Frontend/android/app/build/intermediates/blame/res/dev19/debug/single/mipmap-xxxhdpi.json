@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/mipmap-xxxhdpi/dev_icon.png",
+        "source": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/res/mipmap-xxxhdpi/dev_icon.png"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

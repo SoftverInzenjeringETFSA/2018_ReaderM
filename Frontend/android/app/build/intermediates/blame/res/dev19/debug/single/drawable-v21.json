@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/drawable-v21/notification_action_background.xml",
+        "source": "/root/.android/build-cache/2766250015cbaa0cf4044638cda6656a446361a1/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    }
+]

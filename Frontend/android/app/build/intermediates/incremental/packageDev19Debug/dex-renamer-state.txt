@@ -1,0 +1,7 @@
+#Tue May 22 22:20:56 CEST 2018
+base.0=/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10000/instant-run-bootstrap_e8a809acfa6557afbf5caad4ed9fb620c37455c4
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10000/instant-run_3597ddfcffe0fc3964809257fb53f0acc1ecd5fe/classes.dex
+base.1=/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10000/instant-run_3597ddfcffe0fc3964809257fb53f0acc1ecd5fe
+file.0=/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10000/instant-run-bootstrap_e8a809acfa6557afbf5caad4ed9fb620c37455c4/classes.dex

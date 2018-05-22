@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/xml/stub_classic.xml",
+        "source": "/root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/res/xml/stub_classic.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/xml/preferences.xml",
+        "source": "/root/.android/build-cache/fd81096ee8a7e29444f092caaa3f8ed882477390/output/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/xml/provider_paths.xml",
+        "source": "/root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/xml/global_tracker.xml",
+        "source": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/generated/res/google-services/dev19/debug/xml/global_tracker.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/xml/stub_material.xml",
+        "source": "/root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/res/xml/stub_material.xml"
+    }
+]

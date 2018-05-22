@@ -1,0 +1,994 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:2:1-267:12
+	package
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:3:3-30
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:5:3-49
+	xmlns:android
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:4:3-61
+	android:versionCode
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+permission#reader.m.permission.C2D_MESSAGE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:7:3-9:42
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:9:5-40
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:8:5-51
+uses-permission#reader.m.permission.C2D_MESSAGE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:12:3-69
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:12:20-66
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:13:3-80
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /root/.android/build-cache/f215723063403884b61037cadbbdadeb7a45ace7/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /root/.android/build-cache/a391d1a0a58e69f523aa6b5f77d1c32d432217b5/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:13:20-77
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:14:3-77
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:25:5-79
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /root/.android/build-cache/f0b0c16dc7545be4193504884be203c6616add02/output/AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /root/.android/build-cache/b9badecfe7e34a343f53136382da1f2b296db1b5/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /root/.android/build-cache/a1475c7533a231593059ddf4ea67ef84f19bea3d/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /root/.android/build-cache/da6648762e7d08aefa7e6395879eacd04f597c9a/output/AndroidManifest.xml:19:5-78
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /root/.android/build-cache/229a7b7301ecaebe4f29e23f0eb380d96e33cd91/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:14:20-74
+uses-permission#android.permission.INTERNET
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:15:3-65
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:19:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /root/.android/build-cache/9ea85abc16a17e052e379ce0d1c2c94b1fca018c/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /root/.android/build-cache/6c9c428af62b4c9af2b781676bf81d9ef607e86e/output/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /root/.android/build-cache/54ec3143b1ffbb5075a7e6b37de1c3ff8bc85e00/output/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /root/.android/build-cache/429252ea56d3a15616e7cecbc666862ff4d31faf/output/AndroidManifest.xml:25:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /root/.android/build-cache/c0c34d82fa54f54af6958fe6cd7888490b28a92b/output/AndroidManifest.xml:9:5-67
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /root/.android/build-cache/f0b0c16dc7545be4193504884be203c6616add02/output/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /root/.android/build-cache/f215723063403884b61037cadbbdadeb7a45ace7/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /root/.android/build-cache/a391d1a0a58e69f523aa6b5f77d1c32d432217b5/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /root/.android/build-cache/b9badecfe7e34a343f53136382da1f2b296db1b5/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /root/.android/build-cache/a1475c7533a231593059ddf4ea67ef84f19bea3d/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /root/.android/build-cache/da6648762e7d08aefa7e6395879eacd04f597c9a/output/AndroidManifest.xml:20:5-66
+MERGED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /root/.android/build-cache/229a7b7301ecaebe4f29e23f0eb380d96e33cd91/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:15:20-62
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:16:3-76
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:21:5-78
+MERGED from [com.facebook.react:react-native:27.0.0] /root/.android/build-cache/fd81096ee8a7e29444f092caaa3f8ed882477390/output/AndroidManifest.xml:11:5-78
+MERGED from [host.exp:reactandroid-abi27_0_0:1.0.0] /root/.android/build-cache/53d9063f1e58eaa282f76650a99878690ed0b131/output/AndroidManifest.xml:11:5-78
+MERGED from [host.exp:reactandroid-abi26_0_0:1.0.0] /root/.android/build-cache/e39ba682a5e6727d4c4f4942b0230e20f7fe614f/output/AndroidManifest.xml:11:5-78
+MERGED from [host.exp:reactandroid-abi25_0_0:1.0.0] /root/.android/build-cache/f30d47e48a99fa46212fa281c5b8e3dbe4bc4fcc/output/AndroidManifest.xml:11:5-78
+MERGED from [host.exp:reactandroid-abi24_0_0:1.0.0] /root/.android/build-cache/3ec3f38a82827e6c499f282addbf4dc01ff9a0f3/output/AndroidManifest.xml:11:5-78
+MERGED from [host.exp:reactandroid-abi23:1.0.0] /root/.android/build-cache/f2845d11fd6bc216b309a26f4389923b1e5e6473/output/AndroidManifest.xml:11:5-78
+MERGED from [host.exp:reactandroid-abi22:1.0.0] /root/.android/build-cache/98a56eba2b35b92ba968c119dadf77950ace409a/output/AndroidManifest.xml:11:5-78
+MERGED from [host.exp:reactandroid-abi21:1.0.0] /root/.android/build-cache/00c822aa2c388ff8054d266d15e79168d6c00d61/output/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:16:20-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:17:3-66
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:22:5-68
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /root/.android/build-cache/b9badecfe7e34a343f53136382da1f2b296db1b5/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /root/.android/build-cache/a1475c7533a231593059ddf4ea67ef84f19bea3d/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /root/.android/build-cache/229a7b7301ecaebe4f29e23f0eb380d96e33cd91/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:17:20-63
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:21:3-73
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:26:5-75
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:21:20-70
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:22:3-78
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:24:5-80
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:22:20-75
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:23:3-73
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:23:20-70
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:24:3-72
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:27:5-74
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:24:20-69
+uses-permission#android.permission.VIBRATE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:25:3-64
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:25:20-61
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:26:3-86
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:20:5-88
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:26:20-83
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:29:3-79
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:37:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:29:20-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:30:3-77
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:38:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:30:20-74
+uses-permission#android.permission.CAMERA
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:31:3-63
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:36:5-65
+MERGED from [com.google.android:cameraview:1.0.0] /root/.android/build-cache/8b56ef99dac63479b5c25750630f670e12748b5b/output/AndroidManifest.xml:23:5-65
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:31:20-60
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:32:3-70
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:31:5-72
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:32:20-67
+uses-permission#android.permission.READ_CALENDAR
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:33:3-70
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:32:5-72
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:33:20-67
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:34:3-71
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:33:5-73
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:34:20-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:35:3-78
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:34:5-80
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:35:20-75
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:36:3-69
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:36:20-66
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:37:3-79
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:35:5-81
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:37:20-76
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:38:3-71
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:38:20-68
+uses-feature#0x00020000
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:43:3-77
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /root/.android/build-cache/da6648762e7d08aefa7e6395879eacd04f597c9a/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:43:17-49
+	android:required
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:43:50-74
+application
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:45:3-265:17
+MERGED from [android:react-native-fetch-blob:unspecified] /home/delmond/Documents/Fax/SI/ReaderM/Frontend/node_modules/react-native-fetch-blob/android/build/intermediates/bundles/default/AndroidManifest.xml:11:5-12:19
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:68:5-84:19
+MERGED from [com.facebook.react:react-native:27.0.0] /root/.android/build-cache/fd81096ee8a7e29444f092caaa3f8ed882477390/output/AndroidManifest.xml:13:5-20
+MERGED from [host.exp:reactandroid-abi27_0_0:1.0.0] /root/.android/build-cache/53d9063f1e58eaa282f76650a99878690ed0b131/output/AndroidManifest.xml:13:5-20
+MERGED from [host.exp:reactandroid-abi26_0_0:1.0.0] /root/.android/build-cache/e39ba682a5e6727d4c4f4942b0230e20f7fe614f/output/AndroidManifest.xml:13:5-20
+MERGED from [host.exp:reactandroid-abi25_0_0:1.0.0] /root/.android/build-cache/f30d47e48a99fa46212fa281c5b8e3dbe4bc4fcc/output/AndroidManifest.xml:13:5-20
+MERGED from [host.exp:reactandroid-abi24_0_0:1.0.0] /root/.android/build-cache/3ec3f38a82827e6c499f282addbf4dc01ff9a0f3/output/AndroidManifest.xml:13:5-20
+MERGED from [host.exp:reactandroid-abi23:1.0.0] /root/.android/build-cache/f2845d11fd6bc216b309a26f4389923b1e5e6473/output/AndroidManifest.xml:13:5-20
+MERGED from [host.exp:reactandroid-abi22:1.0.0] /root/.android/build-cache/98a56eba2b35b92ba968c119dadf77950ace409a/output/AndroidManifest.xml:13:5-20
+MERGED from [host.exp:reactandroid-abi21:1.0.0] /root/.android/build-cache/00c822aa2c388ff8054d266d15e79168d6c00d61/output/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /root/.android/build-cache/d462d02665ac6894f97952229070b7621e63d774/output/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /root/.android/build-cache/69dd2c958d10828a6cae254e89efdb09f53eff3e/output/AndroidManifest.xml:2:3-17
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /root/.android/build-cache/9ea85abc16a17e052e379ce0d1c2c94b1fca018c/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /root/.android/build-cache/6c9c428af62b4c9af2b781676bf81d9ef607e86e/output/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /root/.android/build-cache/54ec3143b1ffbb5075a7e6b37de1c3ff8bc85e00/output/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /root/.android/build-cache/429252ea56d3a15616e7cecbc666862ff4d31faf/output/AndroidManifest.xml:27:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /root/.android/build-cache/c0c34d82fa54f54af6958fe6cd7888490b28a92b/output/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.28.0] /root/.android/build-cache/77c6a4ae88b86542a0f43020e471eddcd60d9a0b/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.28.0] /root/.android/build-cache/346a78aa8601963d730f3c2dc03f92497730ec27/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.28.0] /root/.android/build-cache/dbd8f224e196b65dc8b1464eaff4b7b2f5380f6f/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.28.0] /root/.android/build-cache/9c3ff871966920f4b063f16e0a43b6805100dd96/output/AndroidManifest.xml:28:5-34:19
+MERGED from [com.android.support:cardview-v7:26.0.1] /root/.android/build-cache/68c328d2e290be0a4a79a20a5b9a5990e1d212d0/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-places:4.28.0] /root/.android/build-cache/99a9ae5480e9a6612d6379ba3614f27cbe8920ed/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.28.0] /root/.android/build-cache/f1ae1ceea4add948c6478267c1215e4758476a15/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.28.0] /root/.android/build-cache/23501e1434b586becf1f865edbf80b2ed9c84928/output/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:4.28.0] /root/.android/build-cache/f08f8218927f5550dc735e6750d131087581764d/output/AndroidManifest.xml:28:5-43:19
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /root/.android/build-cache/f0b0c16dc7545be4193504884be203c6616add02/output/AndroidManifest.xml:14:5-18:19
+MERGED from [com.android.support:recyclerview-v7:26.0.1] /root/.android/build-cache/1026521dfec5fd302e8d77617774dc42bf1ea5a3/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /root/.android/build-cache/f215723063403884b61037cadbbdadeb7a45ace7/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /root/.android/build-cache/a391d1a0a58e69f523aa6b5f77d1c32d432217b5/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /root/.android/build-cache/b9badecfe7e34a343f53136382da1f2b296db1b5/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /root/.android/build-cache/a1475c7533a231593059ddf4ea67ef84f19bea3d/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-clearcut:9.8.0] /root/.android/build-cache/cdf8e231b70c76ba5ddcfc2b43ea125bb241a702/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:9.8.0] /root/.android/build-cache/dda621b7f9067c51532fa8e12d36c92bc82d9a5d/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-fitness:9.8.0] /root/.android/build-cache/0c5d59f99ca29656c656c4f81d475bcb791bcd2a/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-location:9.8.0] /root/.android/build-cache/49f386b41c3be5684b96491bb43308ae922d46d1/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision:9.8.0] /root/.android/build-cache/52b7effa62e9b054f3de46a88c8445626f597e3c/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:9.8.0] /root/.android/build-cache/be50948883d868d6845056fc75277a38df99a71e/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /root/.android/build-cache/da6648762e7d08aefa7e6395879eacd04f597c9a/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:9.8.0] /root/.android/build-cache/739d6198b2572904c3492d6a75b1f4e8d03f3fd0/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.raizlabs.android:DBFlow:2.2.1] /root/.android/build-cache/468a62d5ed02c1e96e18dc7edc05f8053291c9f4/output/AndroidManifest.xml:11:5-20
+MERGED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:26:5-44:19
+MERGED from [com.android.support:customtabs:26.0.1] /root/.android/build-cache/a318d1c74b98a42c5bf91d9d4200391061c09c50/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.airbnb.android:lottie:2.2.0] /root/.android/build-cache/ce6330bfec6d42cdbec753fb180e21fb528f3f0e/output/AndroidManifest.xml:10:5-20
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.6] /root/.android/build-cache/b874b451007757f960f97bf5c9eecb6f678327f7/output/AndroidManifest.xml:11:5-20
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:18:5-28:19
+MERGED from [com.android.support:exifinterface:26.0.1] /root/.android/build-cache/8e1993d83beb3a72362efa95164e62afd31be507/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android:cameraview:1.0.0] /root/.android/build-cache/8b56ef99dac63479b5c25750630f670e12748b5b/output/AndroidManifest.xml:32:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.1] /root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /root/.android/build-cache/201f2d71557f48ca07d948c9f00f18c9e450c3ae/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /root/.android/build-cache/66c83a475c5c487392981ed6c87bd61868eda2b3/output/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.firebase:firebase-core:9.8.0] /root/.android/build-cache/0268a89a0921c0449470ce2dad045de127554a3e/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /root/.android/build-cache/229a7b7301ecaebe4f29e23f0eb380d96e33cd91/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:9.8.0] /root/.android/build-cache/9680a892e08a2548a9fd61c3f17891d2014c7035/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /root/.android/build-cache/b156591997bf0cd5b2b2672116ca3d8ae6cd8425/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /root/.android/build-cache/0c7e2144c501aabf8581b868463d92f3ea1fdbb4/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.0.1] /root/.android/build-cache/0319af89feda954bef5c572dcd3fb09f294fb8fe/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.1] /root/.android/build-cache/155d6982f2b198eac0cd474777fdf226d1b62896/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.1] /root/.android/build-cache/12c16875dab3f5d426bc8a4c5fc5cce4f78f6c73/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.1] /root/.android/build-cache/ef2480d23b0724d65cd35826b4e2a981544ad1a8/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.1] /root/.android/build-cache/1f237f93412b3b39bc1136da4d36c8188738def9/output/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.1] /root/.android/build-cache/2766250015cbaa0cf4044638cda6656a446361a1/output/AndroidManifest.xml:25:5-29:19
+	android:label
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:49:5-37
+	android:supportsRtl
+		ADDED from [com.facebook.android:facebook-android-sdk:4.28.0] /root/.android/build-cache/77c6a4ae88b86542a0f43020e471eddcd60d9a0b/output/AndroidManifest.xml:28:18-44
+	android:allowBackup
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:47:5-31
+	android:icon
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:48:5-39
+	android:largeHeap
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:50:5-29
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:46:5-36
+activity#host.exp.exponent.LauncherActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:52:5-59:16
+	android:screenOrientation
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:56:7-43
+	android:launchMode
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:55:7-38
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:54:7-30
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:57:7-66
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:53:7-39
+activity#host.exp.exponent.experience.ExperienceActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:61:5-66:16
+	android:windowSoftInputMode
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:65:7-49
+	android:configChanges
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:63:7-77
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:64:7-50
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:62:7-52
+activity#host.exp.exponent.MainActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:68:5-87:16
+	android:launchMode
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:70:7-38
+	android:windowSoftInputMode
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:73:7-49
+	android:configChanges
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:71:7-77
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:72:7-51
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:69:7-35
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:74:7-81:23
+data
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:75:9-69
+	android:scheme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:75:15-67
+action#android.intent.action.VIEW
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:77:9-60
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:77:17-58
+category#android.intent.category.DEFAULT
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:79:9-67
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:79:19-65
+category#android.intent.category.BROWSABLE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:80:9-69
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:80:19-67
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:82:7-86:23
+action#android.intent.action.MAIN
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:83:9-60
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:83:17-58
+category#android.intent.category.LAUNCHER
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:85:9-68
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:85:19-66
+activity#host.exp.exponent.experience.ShellAppActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:89:5-95:16
+	android:windowSoftInputMode
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:93:7-49
+	android:configChanges
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:91:7-77
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:92:7-51
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:90:7-50
+activity#host.exp.exponent.experience.HomeActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:97:5-103:16
+	android:screenOrientation
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:101:7-43
+	android:label
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:99:7-39
+	android:launchMode
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:100:7-38
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:102:7-50
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:98:7-46
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:105:5-81
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:105:15-79
+activity#abi27_0_0.com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:107:5-91
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:107:15-89
+activity#abi26_0_0.com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:108:5-91
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:108:15-89
+activity#abi25_0_0.com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:109:5-91
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:109:15-89
+activity#abi24_0_0.com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:110:5-91
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:110:15-89
+activity#abi23_0_0.com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:111:5-91
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:111:15-89
+activity#abi22_0_0.com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:112:5-91
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:112:15-89
+activity#abi21_0_0.com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:113:5-91
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:113:15-89
+activity#host.exp.exponent.ExponentDevActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:115:5-122:16
+	android:screenOrientation
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:119:7-43
+	android:label
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:118:7-48
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:117:7-30
+	android:windowSoftInputMode
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:121:7-46
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:120:7-49
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:116:7-42
+activity#host.exp.exponent.oauth.OAuthWebViewActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:124:5-128:16
+	android:screenOrientation
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:126:7-43
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:127:7-50
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:125:7-49
+activity#net.openid.appauth.RedirectUriReceiverActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:130:5-139:16
+REJECTED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:32:9-43:20
+	tools:node
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:132:9-29
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:131:9-70
+activity#host.exp.exponent.oauth.OAuthResultActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:141:5-143:16
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:142:7-48
+activity#host.exp.exponent.chrometabs.ChromeTabsManagerActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:145:5-147:16
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:146:7-59
+activity#host.exp.exponent.experience.ErrorActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:149:5-153:16
+	android:screenOrientation
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:152:7-43
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:151:7-49
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:150:7-47
+activity#host.exp.exponent.experience.InfoActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:155:5-159:16
+	android:screenOrientation
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:157:7-43
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:158:7-50
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:156:7-46
+activity#com.facebook.FacebookActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:161:5-166:39
+MERGED from [com.facebook.android:facebook-common:4.28.0] /root/.android/build-cache/9c3ff871966920f4b063f16e0a43b6805100dd96/output/AndroidManifest.xml:29:9-32:66
+	android:label
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:164:7-39
+	android:configChanges
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:163:7-90
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:165:7-66
+		REJECTED from [com.facebook.android:facebook-common:4.28.0] /root/.android/build-cache/9c3ff871966920f4b063f16e0a43b6805100dd96/output/AndroidManifest.xml:32:13-63
+	tools:replace
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:166:7-36
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:162:7-51
+activity#com.facebook.ads.InterstitialAdActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:168:5-172:69
+	android:label
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:171:7-39
+	android:configChanges
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:170:7-90
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:172:7-66
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:169:7-61
+service#host.exp.exponent.ExponentIntentService
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:174:5-176:34
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:176:7-31
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:175:7-44
+receiver#host.exp.exponent.referrer.InstallReferrerReceiver
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:179:5-185:16
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:181:7-30
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:180:7-72
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:182:7-184:23
+action#com.android.vending.INSTALL_REFERRER
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:183:9-71
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:183:17-68
+receiver#com.google.android.gms.analytics.AnalyticsReceiver
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:195:5-200:16
+	android:enabled
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:196:15-37
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:195:15-80
+intent-filter#com.google.android.gms.analytics.ANALYTICS_DISPATCH
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:197:7-199:23
+action#com.google.android.gms.analytics.ANALYTICS_DISPATCH
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:198:9-86
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:198:17-83
+service#com.google.android.gms.analytics.AnalyticsService
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:202:5-204:40
+	android:enabled
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:203:14-36
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:204:14-38
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:202:14-78
+receiver#com.google.android.gms.gcm.GcmReceiver
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:207:5-217:16
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:209:7-30
+	android:permission
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:210:7-67
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:208:7-60
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+reader.m
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:211:7-216:23
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:212:9-72
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:212:17-70
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:213:9-77
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:213:17-75
+category#reader.m
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:215:9-44
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:215:19-42
+service#host.exp.exponent.gcm.ExponentGcmListenerService
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:219:5-225:15
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:221:7-31
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:220:7-53
+intent-filter#com.google.android.c2dm.intent.RECEIVE
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:222:7-224:23
+service#host.exp.exponent.gcm.ExponentInstanceIDListenerService
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:226:5-232:15
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:228:7-31
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:227:7-60
+intent-filter#com.google.android.gms.iid.InstanceID
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:229:7-231:23
+action#com.google.android.gms.iid.InstanceID
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:230:9-71
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:230:17-69
+service#host.exp.exponent.gcm.GcmRegistrationIntentService
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:233:5-236:15
+	android:exported
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:235:7-31
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:234:7-55
+activity#com.theartofdev.edmodo.cropper.CropImageActivity
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:241:5-244:16
+	android:theme
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:243:7-50
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:242:7-70
+meta-data#io.fabric.ApiKey
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:249:5-251:65
+	android:value
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:251:7-63
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:250:7-38
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:256:5-258:64
+	android:value
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:258:7-62
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:257:7-52
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:264:5-83
+	android:value
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:264:62-81
+	android:name
+		ADDED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml:264:16-61
+uses-sdk
+INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [android:react-native-pdf:unspecified] /home/delmond/Documents/Fax/SI/ReaderM/Frontend/node_modules/react-native-pdf/android/build/intermediates/bundles/default/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.barteksc:android-pdf-viewer:3.0.0-beta.5] /root/.android/build-cache/a3129450fea2d41a4a12433f50c8d1e302053886/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.8.2] /root/.android/build-cache/45b61a88f6449b5dbfcdd248c14cc53b26a9f736/output/AndroidManifest.xml:7:5-9:41
+MERGED from [android:react-native-fetch-blob:unspecified] /home/delmond/Documents/Fax/SI/ReaderM/Frontend/node_modules/react-native-fetch-blob/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.1] /root/.android/build-cache/c5ad5e527ebe5e6c4d7faa85f87408dc180050f9/output/AndroidManifest.xml:18:5-42
+MERGED from [com.facebook.react:react-native:27.0.0] /root/.android/build-cache/fd81096ee8a7e29444f092caaa3f8ed882477390/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.0.1] /root/.android/build-cache/dcf08447e7e0ca118e0cdad93ae7eab2873f66b9/output/AndroidManifest.xml:5:5-7:41
+MERGED from [host.exp:reactandroid-abi27_0_0:1.0.0] /root/.android/build-cache/53d9063f1e58eaa282f76650a99878690ed0b131/output/AndroidManifest.xml:7:5-9:41
+MERGED from [host.exp:reactandroid-abi26_0_0:1.0.0] /root/.android/build-cache/e39ba682a5e6727d4c4f4942b0230e20f7fe614f/output/AndroidManifest.xml:7:5-9:41
+MERGED from [host.exp:reactandroid-abi25_0_0:1.0.0] /root/.android/build-cache/f30d47e48a99fa46212fa281c5b8e3dbe4bc4fcc/output/AndroidManifest.xml:7:5-9:41
+MERGED from [host.exp:reactandroid-abi24_0_0:1.0.0] /root/.android/build-cache/3ec3f38a82827e6c499f282addbf4dc01ff9a0f3/output/AndroidManifest.xml:7:5-9:41
+MERGED from [host.exp:reactandroid-abi23:1.0.0] /root/.android/build-cache/f2845d11fd6bc216b309a26f4389923b1e5e6473/output/AndroidManifest.xml:7:5-9:41
+MERGED from [host.exp:reactandroid-abi22:1.0.0] /root/.android/build-cache/98a56eba2b35b92ba968c119dadf77950ace409a/output/AndroidManifest.xml:7:5-9:41
+MERGED from [host.exp:reactandroid-abi21:1.0.0] /root/.android/build-cache/00c822aa2c388ff8054d266d15e79168d6c00d61/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /root/.android/build-cache/e5a26b6e5180fd09dc0f15e8551a00e98ec54a1b/output/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.0.1] /root/.android/build-cache/58465397c374d04142b3a7d428e33a21e21c350a/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.0.1] /root/.android/build-cache/2f50b2f2ea87cd0249a487c738a33e854c184a8f/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-gif:1.0.1] /root/.android/build-cache/9fb42344ef968a48e2f9e5e8d5118cc48ae575fc/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-webp:1.0.1] /root/.android/build-cache/eb72f4187be588be57cdae688ad20e5ccab2c6f5/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:animated-base:1.0.1] /root/.android/build-cache/ca3959894a261db80db6324271d66356897b98ab/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.0.1] /root/.android/build-cache/b362fbfa751771dbe982f4f9effc196a29748811/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:webpsupport:1.0.1] /root/.android/build-cache/225a2c907b751d4bafca98f947486652c37e4f5a/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.0.1] /root/.android/build-cache/ab7673f863b8381ecaa43aa93a535deffd435d8b/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.0.1] /root/.android/build-cache/4ae6af2cd005d277a2cc9fc8d82bf714692505bc/output/AndroidManifest.xml:5:5-7:41
+MERGED from [expolib_v1.com.facebook.fresco:expolib_v1-imagepipeline-okhttp3:1.0.1] /root/.android/build-cache/fa0e18654ce3dad078042a64053e76c922e39cdf/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /root/.android/build-cache/d462d02665ac6894f97952229070b7621e63d774/output/AndroidManifest.xml:2:3-70
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.5.5] /root/.android/build-cache/9ea85abc16a17e052e379ce0d1c2c94b1fca018c/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.3.8] /root/.android/build-cache/6c9c428af62b4c9af2b781676bf81d9ef607e86e/output/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.3.6] /root/.android/build-cache/54ec3143b1ffbb5075a7e6b37de1c3ff8bc85e00/output/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.3.10] /root/.android/build-cache/429252ea56d3a15616e7cecbc666862ff4d31faf/output/AndroidManifest.xml:23:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.1.4] /root/.android/build-cache/c0c34d82fa54f54af6958fe6cd7888490b28a92b/output/AndroidManifest.xml:7:5-43
+MERGED from [com.facebook.android:facebook-android-sdk:4.28.0] /root/.android/build-cache/77c6a4ae88b86542a0f43020e471eddcd60d9a0b/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.28.0] /root/.android/build-cache/346a78aa8601963d730f3c2dc03f92497730ec27/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.28.0] /root/.android/build-cache/dbd8f224e196b65dc8b1464eaff4b7b2f5380f6f/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.28.0] /root/.android/build-cache/9c3ff871966920f4b063f16e0a43b6805100dd96/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:cardview-v7:26.0.1] /root/.android/build-cache/68c328d2e290be0a4a79a20a5b9a5990e1d212d0/output/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-places:4.28.0] /root/.android/build-cache/99a9ae5480e9a6612d6379ba3614f27cbe8920ed/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.28.0] /root/.android/build-cache/f1ae1ceea4add948c6478267c1215e4758476a15/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.28.0] /root/.android/build-cache/23501e1434b586becf1f865edbf80b2ed9c84928/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.28.0] /root/.android/build-cache/f08f8218927f5550dc735e6750d131087581764d/output/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:audience-network-sdk:4.26.1] /root/.android/build-cache/f0b0c16dc7545be4193504884be203c6616add02/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:26.0.1] /root/.android/build-cache/1026521dfec5fd302e8d77617774dc42bf1ea5a3/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.exoplayer:exoplayer:r2.0.3] /root/.android/build-cache/90ccf1d198da5f5bdf00a997e16a59b915c2005d/output/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.android.gms:play-services-gcm:9.8.0] /root/.android/build-cache/f215723063403884b61037cadbbdadeb7a45ace7/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.8.0] /root/.android/build-cache/a391d1a0a58e69f523aa6b5f77d1c32d432217b5/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics:9.8.0] /root/.android/build-cache/b9badecfe7e34a343f53136382da1f2b296db1b5/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.8.0] /root/.android/build-cache/a1475c7533a231593059ddf4ea67ef84f19bea3d/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.8.0] /root/.android/build-cache/ba255c835f483145bd62aa0d395f4e3e0a036a2c/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-ads:9.8.0] /root/.android/build-cache/9866f94051fb51d13fcd7c109e1ff1b072e38674/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:9.8.0] /root/.android/build-cache/cdf8e231b70c76ba5ddcfc2b43ea125bb241a702/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:9.8.0] /root/.android/build-cache/dda621b7f9067c51532fa8e12d36c92bc82d9a5d/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-fitness:9.8.0] /root/.android/build-cache/0c5d59f99ca29656c656c4f81d475bcb791bcd2a/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-location:9.8.0] /root/.android/build-cache/49f386b41c3be5684b96491bb43308ae922d46d1/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-vision:9.8.0] /root/.android/build-cache/52b7effa62e9b054f3de46a88c8445626f597e3c/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-wallet:9.8.0] /root/.android/build-cache/9a0cefb2270a5d27de6969b73fe410c35e89319b/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-identity:9.8.0] /root/.android/build-cache/be50948883d868d6845056fc75277a38df99a71e/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.8.0] /root/.android/build-cache/da6648762e7d08aefa7e6395879eacd04f597c9a/output/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-base:9.8.0] /root/.android/build-cache/739d6198b2572904c3492d6a75b1f4e8d03f3fd0/output/AndroidManifest.xml:17:5-42
+MERGED from [com.stripe:stripe-android:2.1.0] /root/.android/build-cache/40955c1c7fa9e8c7e65f376e4c5d4d5960022fac/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.thefuntasty:CreditCardEntry:1.4.8.4] /root/.android/build-cache/f32a7752164befe9aaede2e0113c824f6426fd56/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.raizlabs.android:DBFlow:2.2.1] /root/.android/build-cache/468a62d5ed02c1e96e18dc7edc05f8053291c9f4/output/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.theartofdev.edmodo:android-image-cropper:2.4.7] /root/.android/build-cache/5949d09019be9771ad8518cf7a9029a933f625ad/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.1] /root/.android/build-cache/f2d926a29aea8d3fbdbd6799e9fb2a0aaeb94d49/output/AndroidManifest.xml:8:5-10:41
+MERGED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:customtabs:26.0.1] /root/.android/build-cache/a318d1c74b98a42c5bf91d9d4200391061c09c50/output/AndroidManifest.xml:20:5-44
+MERGED from [com.airbnb.android:lottie:2.2.0] /root/.android/build-cache/ce6330bfec6d42cdbec753fb180e21fb528f3f0e/output/AndroidManifest.xml:6:5-8:41
+MERGED from [io.branch.sdk.android:library:2.6.1] /root/.android/build-cache/ff0afdd5db2623e57254336420bbe06afdc2f683/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.crashlytics.sdk.android:answers-shim:0.0.6] /root/.android/build-cache/b874b451007757f960f97bf5c9eecb6f678327f7/output/AndroidManifest.xml:7:5-9:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:exifinterface:26.0.1] /root/.android/build-cache/8e1993d83beb3a72362efa95164e62afd31be507/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android:cameraview:1.0.0] /root/.android/build-cache/8b56ef99dac63479b5c25750630f670e12748b5b/output/AndroidManifest.xml:19:5-21:41
+MERGED from [com.android.support:appcompat-v7:26.0.1] /root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /root/.android/build-cache/201f2d71557f48ca07d948c9f00f18c9e450c3ae/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /root/.android/build-cache/66c83a475c5c487392981ed6c87bd61868eda2b3/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-core:9.8.0] /root/.android/build-cache/0268a89a0921c0449470ce2dad045de127554a3e/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /root/.android/build-cache/229a7b7301ecaebe4f29e23f0eb380d96e33cd91/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:9.8.0] /root/.android/build-cache/9680a892e08a2548a9fd61c3f17891d2014c7035/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.8.0] /root/.android/build-cache/b156591997bf0cd5b2b2672116ca3d8ae6cd8425/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /root/.android/build-cache/0c7e2144c501aabf8581b868463d92f3ea1fdbb4/output/AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:26.0.1] /root/.android/build-cache/0319af89feda954bef5c572dcd3fb09f294fb8fe/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.1] /root/.android/build-cache/155d6982f2b198eac0cd474777fdf226d1b62896/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.1] /root/.android/build-cache/12c16875dab3f5d426bc8a4c5fc5cce4f78f6c73/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.1] /root/.android/build-cache/ef2480d23b0724d65cd35826b4e2a981544ad1a8/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.1] /root/.android/build-cache/1f237f93412b3b39bc1136da4d36c8188738def9/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.1] /root/.android/build-cache/2766250015cbaa0cf4044638cda6656a446361a1/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta1] /root/.android/build-cache/40a8e4ab0e8689aa234a6e37d8f144892ed4b2ec/output/AndroidManifest.xml:20:5-22:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.1] /root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:11:5-17:24
+	android:largeScreens
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:13:9-36
+	android:smallScreens
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:15:9-36
+	android:normalScreens
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:14:9-37
+	android:xlargeScreens
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:16:9-37
+	android:anyDensity
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:12:9-34
+uses-permission#host.exp.exponent.permission.C2D_MESSAGE
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:23:5-80
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:23:22-77
+uses-feature#android.hardware.camera
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:40:5-42:36
+MERGED from [com.google.android:cameraview:1.0.0] /root/.android/build-cache/8b56ef99dac63479b5c25750630f670e12748b5b/output/AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:42:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:41:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:43:5-45:36
+MERGED from [com.google.android:cameraview:1.0.0] /root/.android/build-cache/8b56ef99dac63479b5c25750630f670e12748b5b/output/AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:45:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:44:9-57
+uses-feature#android.hardware.location
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:46:5-48:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:48:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:47:9-49
+uses-feature#android.hardware.location.gps
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:49:5-51:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:51:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:50:9-53
+uses-feature#android.hardware.location.network
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:52:5-54:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:54:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:53:9-57
+uses-feature#android.hardware.wifi
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:55:5-57:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:57:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:56:9-45
+uses-feature#android.hardware.microphone
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:58:5-60:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:60:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:59:9-51
+uses-feature#android.hardware.telephony
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:61:5-63:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:63:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:62:9-50
+uses-feature#android.hardware.bluetooth
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:64:5-66:36
+	android:required
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:66:9-33
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:65:9-50
+receiver#host.exp.exponent.notifications.ScheduledNotificationReceiver
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:71:9-73:40
+	android:exported
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:73:13-37
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:72:13-89
+provider#android.support.v4.content.FileProvider
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:75:9-83:20
+	android:authorities
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:77:13-60
+	android:grantUriPermissions
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:79:13-47
+	android:exported
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:78:13-37
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:76:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:80:13-82:58
+	android:resource
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:82:17-55
+	android:name
+		ADDED from [host.exp.exponent:expoview:27.0.0] /root/.android/build-cache/248ef6c3d47f0032ca7b16c9c79557d095eea5e5/output/AndroidManifest.xml:81:17-67
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.28.0] /root/.android/build-cache/9c3ff871966920f4b063f16e0a43b6805100dd96/output/AndroidManifest.xml:33:9-71
+	android:name
+		ADDED from [com.facebook.android:facebook-common:4.28.0] /root/.android/build-cache/9c3ff871966920f4b063f16e0a43b6805100dd96/output/AndroidManifest.xml:33:19-68
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:26.0.1] /root/.android/build-cache/68c328d2e290be0a4a79a20a5b9a5990e1d212d0/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.1] /root/.android/build-cache/1026521dfec5fd302e8d77617774dc42bf1ea5a3/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:customtabs:26.0.1] /root/.android/build-cache/a318d1c74b98a42c5bf91d9d4200391061c09c50/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:exifinterface:26.0.1] /root/.android/build-cache/8e1993d83beb3a72362efa95164e62afd31be507/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:appcompat-v7:26.0.1] /root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.1] /root/.android/build-cache/201f2d71557f48ca07d948c9f00f18c9e450c3ae/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.1] /root/.android/build-cache/66c83a475c5c487392981ed6c87bd61868eda2b3/output/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.1] /root/.android/build-cache/0319af89feda954bef5c572dcd3fb09f294fb8fe/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.1] /root/.android/build-cache/155d6982f2b198eac0cd474777fdf226d1b62896/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.1] /root/.android/build-cache/12c16875dab3f5d426bc8a4c5fc5cce4f78f6c73/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.1] /root/.android/build-cache/ef2480d23b0724d65cd35826b4e2a981544ad1a8/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.1] /root/.android/build-cache/1f237f93412b3b39bc1136da4d36c8188738def9/output/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.1] /root/.android/build-cache/2766250015cbaa0cf4044638cda6656a446361a1/output/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:cardview-v7:26.0.1] /root/.android/build-cache/68c328d2e290be0a4a79a20a5b9a5990e1d212d0/output/AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:cardview-v7:26.0.1] /root/.android/build-cache/68c328d2e290be0a4a79a20a5b9a5990e1d212d0/output/AndroidManifest.xml:24:13-51
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.28.0] /root/.android/build-cache/f08f8218927f5550dc735e6750d131087581764d/output/AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.28.0] /root/.android/build-cache/f08f8218927f5550dc735e6750d131087581764d/output/AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.28.0] /root/.android/build-cache/f08f8218927f5550dc735e6750d131087581764d/output/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.28.0] /root/.android/build-cache/f08f8218927f5550dc735e6750d131087581764d/output/AndroidManifest.xml:40:13-70
+activity#com.facebook.ads.AudienceNetworkActivity
+ADDED from [com.facebook.android:audience-network-sdk:4.26.1] /root/.android/build-cache/f0b0c16dc7545be4193504884be203c6616add02/output/AndroidManifest.xml:15:9-17:77
+	android:configChanges
+		ADDED from [com.facebook.android:audience-network-sdk:4.26.1] /root/.android/build-cache/f0b0c16dc7545be4193504884be203c6616add02/output/AndroidManifest.xml:17:13-74
+	android:name
+		ADDED from [com.facebook.android:audience-network-sdk:4.26.1] /root/.android/build-cache/f0b0c16dc7545be4193504884be203c6616add02/output/AndroidManifest.xml:16:13-68
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.8.0] /root/.android/build-cache/adff8e259e3cf6769b1143b3281834cc212261c9/output/AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:25:19-71
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.8.0] /root/.android/build-cache/cf3addc2ff60f976320325003503632cb0c9a634/output/AndroidManifest.xml:26:19-91
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.8.0] /root/.android/build-cache/739d6198b2572904c3492d6a75b1f4e8d03f3fd0/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /root/.android/build-cache/739d6198b2572904c3492d6a75b1f4e8d03f3fd0/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /root/.android/build-cache/739d6198b2572904c3492d6a75b1f4e8d03f3fd0/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.8.0] /root/.android/build-cache/739d6198b2572904c3492d6a75b1f4e8d03f3fd0/output/AndroidManifest.xml:19:19-85
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:27:22-85
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:30:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:30:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:33:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.4] /root/.android/build-cache/e39ab8bea72153c69eeed73f88b0b11240f8240e/output/AndroidManifest.xml:33:22-80
+activity#net.openid.appauth.AuthorizationManagementActivity
+ADDED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:27:9-31:75
+	android:launchMode
+		ADDED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:30:13-44
+	android:exported
+		ADDED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:31:13-72
+	android:name
+		ADDED from [net.openid:appauth:0.4.1] /root/.android/build-cache/b2044b0b5b1f2cc50af218aabb421679924fe43d/output/AndroidManifest.xml:28:13-78
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:15:5-98
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:15:22-95
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:16:5-94
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:16:22-91
+service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:20:13-132
+service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:23:13-127
+service#io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /root/.android/build-cache/7cf7787bff0ccfe91a47a7f52b8d9e7879aea5fb/output/AndroidManifest.xml:26:13-120
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.8.0] /root/.android/build-cache/1875e1d90e09771d90c1252df042e67efd886c12/output/AndroidManifest.xml:25:25-75
+meta-data#com.google.android.gms.version
+ADDED from [com.google.maps.android:android-maps-utils:0.5] /root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:9.8.0] /root/.android/build-cache/0c7e2144c501aabf8581b868463d92f3ea1fdbb4/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/AndroidManifest.xml:10:13-66
+	android:name
+		ADDED from [com.google.maps.android:android-maps-utils:0.5] /root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/AndroidManifest.xml:9:13-58
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /root/.android/build-cache/229a7b7301ecaebe4f29e23f0eb380d96e33cd91/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:27:17-104
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:9.8.0] /root/.android/build-cache/229a7b7301ecaebe4f29e23f0eb380d96e33cd91/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.8.0] /root/.android/build-cache/d6dbacbedb4c0217e2e9d1700814d3879757bf1d/output/AndroidManifest.xml:32:16-87
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:31:13-35:29
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:44:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:45:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.8.0] /root/.android/build-cache/d4f516b5592d0ba60c44445647d8d64107bac2f2/output/AndroidManifest.xml:46:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.8.0] /root/.android/build-cache/9680a892e08a2548a9fd61c3f17891d2014c7035/output/AndroidManifest.xml:6:9-175
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.8.0] /root/.android/build-cache/9680a892e08a2548a9fd61c3f17891d2014c7035/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.8.0] /root/.android/build-cache/9680a892e08a2548a9fd61c3f17891d2014c7035/output/AndroidManifest.xml:6:125-149
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.8.0] /root/.android/build-cache/9680a892e08a2548a9fd61c3f17891d2014c7035/output/AndroidManifest.xml:6:150-173
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.8.0] /root/.android/build-cache/9680a892e08a2548a9fd61c3f17891d2014c7035/output/AndroidManifest.xml:6:79-124

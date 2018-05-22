@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'native-base';
-import { StyleSheet, Image, KeyboardAvoidingView } from 'react-native';
-import LoginForm from './loginForm'; 
+import { StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
+import LoginForm from './loginForm';
 
 export default class LoginPage extends Component{
 
@@ -9,21 +9,23 @@ export default class LoginPage extends Component{
     return(
       <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <View style={styles.logoContainer}>
-        <Image 
-          style={styles.logo}
-          source={require('../../images/reader.png')}
-          />
-        <Text style={styles.title}>An app made for pdf using React Native</Text>
-        </View> 
+          <Image
+            style={styles.logo}
+            source={require('../../images/reader.png')}
+            />
+          <Text style={styles.title}>An app made for pdf using React Native</Text>
+        </View>
         <View style={styles.formContainer}>
-      <LoginForm/>
-      </View>
+          <TouchableOpacity onPress={() => this.props.openDrawer()}>
+            <Text> Meni </Text>
+          </TouchableOpacity>
+          <LoginForm/>
+        </View>
       </KeyboardAvoidingView>
-       
-    ); 
+    );
   }
-} 
- 
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -45,5 +47,5 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     opacity: 0.6
   }
-   
- }); 
+
+ });

@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_poly_style_boolean_numeric.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_poly_style_boolean_numeric.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_unsupported.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_unsupported.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_multiple_placemarks.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_multiple_placemarks.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_basic_folder.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_basic_folder.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_document_nest.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_document_nest.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_draw_order_ground_overlay.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_draw_order_ground_overlay.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_unknwown_folder.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_unknwown_folder.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_ground_overlay_color.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_ground_overlay_color.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_multigeometry_placemarks.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_multigeometry_placemarks.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_ballon_gx_prefix.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_ballon_gx_prefix.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_ground_overlay.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_ground_overlay.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_default_balloon.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_default_balloon.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_inline_style.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_inline_style.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_basic_placemark.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_basic_placemark.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_nested_multigeometry.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_nested_multigeometry.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_visibility_ground_overlay.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_visibility_ground_overlay.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_nested_folders.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_nested_folders.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_poly_style_boolean_alpha.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_poly_style_boolean_alpha.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_cdata.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_cdata.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/amu_extended_data.kml",
+        "source": "/root/.android/build-cache/32436352869e01a589784b052d4e51cfaff8755b/output/res/raw/amu_extended_data.kml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/raw/gtm_analytics",
+        "source": "/root/.android/build-cache/a1475c7533a231593059ddf4ea67ef84f19bea3d/output/res/raw/gtm_analytics"
+    }
+]

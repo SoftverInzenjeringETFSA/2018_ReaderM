@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/res/merged/dev19/debug/color-v23/abc_tint_default.xml",
+        "source": "/root/.android/build-cache/55bab1813825137a40ab1c4ba62b83c9c736cd2f/output/res/color-v23/abc_tint_default.xml"
+    }
+]
