@@ -1,4 +1,0 @@
-#Tue May 22 22:20:56 CEST 2018
-base.0=/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/5/slice_0
-renamed.0=classes.dex
-file.0=/home/delmond/Documents/Fax/SI/ReaderM/Frontend/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/5/slice_0/classes.dex
