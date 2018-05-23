@@ -17,6 +17,15 @@ class OnlinePregledScreen extends Component{
       this.setState({ data: json.ime });
     };
 
+    chooseFile(){
+    options = {};
+    Expo.DocumentPicker.getDocumentAsync(options).then((result) =>{
+          console.log(result);
+          this.setState({ source: { uri: result.uri }})
+        }
+    )
+  }
+
     render() {
       return (
         <View style={{flex:1}}>
@@ -44,12 +53,12 @@ class OnlinePregledScreen extends Component{
                                         </TouchableOpacity>}
             />
           </View>
-      
+
           <View style={{flex: 1, flexDirection: 'row'}}>
             <Button style={{borderBottomWidth: 2, borderBottomColor: 'white', backgroundColor: '#3498DB', width: '50%', height: '100%'}}>
             <Text style={{color: 'white', fontSize: 18, paddingLeft: 30}}>Online documents</Text>
             </Button>
-            <Button style={{backgroundColor: '#3498DB', width: '50%', height: '100%'}}>
+            <Button style={{backgroundColor: '#3498DB', width: '50%', height: '100%'}} onPress = {this.chooseFile}>
             <Text style={{color: 'white', fontSize: 18, paddingLeft: 30}}>Select from phone</Text>
             </Button>
           </View>
