@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native';
 import { Container, Header, Content, Icon, Footer, FooterTab, Button, Left, Right } from 'native-base';
+import TopHeader from '../topHeader/topHeader.js';
 
 class OnlinePregledScreen extends Component{
     constructor(props){
@@ -37,15 +38,7 @@ class OnlinePregledScreen extends Component{
     render() {
       return (
         <View style={{flex:1}}>
-
-          <View style={{height: 58, marginTop: 24, backgroundColor: '#3498DB', flexDirection: 'row', justifyContent: 'space-between'}}>
-            <TouchableOpacity onPress={() => this.props.history.replace('/')}>
-              <Icon type="Entypo" name="menu" style={{ color:'#fff', paddingLeft: 10, paddingTop: 14 }} />
-            </TouchableOpacity>
-            <Text style={{color: 'white', fontSize: 22, paddingRight: 210, paddingTop: 14}}>Reader</Text>
-            <Icon type="Feather" name="search" style={{ color:'#fff', paddingRight: 16, paddingTop: 14 }}/>
-          </View>
-
+        <TopHeader title={"Reader"} openDrawer={this.props.openDrawer }/>
           <View style={styles.zaslon}>
             <FlatList style={styles.lista}
               data={(this.state.data == null)? []: this.state.data}

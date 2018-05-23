@@ -31,7 +31,7 @@ export default class RouterWrapper extends Component {
       StateManager
      }
   }
-  
+
   render(){
       closeDrawer = () => {
         this.drawer._root.close()
@@ -49,12 +49,7 @@ export default class RouterWrapper extends Component {
             <Switch>
               <Route exact path="/" component={() => <LoginPage openDrawer={ openDrawer } /> } />
               <Route exact path="/OnlinePDFs" component={() => <OnlinePDFs openDrawer={ openDrawer } /> } />
-              <Route exact path="/PdfViewer" component={() => {
-                  if(this.state.StateManager.isUriSet())
-                    return (<PdfViewerPage openDrawer={ openDrawer } />);
-                  else
-                    return (<OnlinePDFs openDrawer={ openDrawer } />);
-                } } />
+              <Route exact path="/PdfViewer" component={() => <PdfViewerPage openDrawer={ openDrawer } /> } />
               <Route exact path="/FavouriteQuotes" component={() => <FavouriteQuotesPage openDrawer={ openDrawer } /> } />
               <Route exact path="/Help" component={() => <Help openDrawer={ openDrawer } /> } />
             </Switch>

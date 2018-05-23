@@ -28,12 +28,20 @@ export default class Navigation extends Component {
             <Col>
               <H1 style={styles.navigationHeader}>Johnny Guitar </H1>
               <List>
-                <ListItem icon button={true} onPress={() => { this.moveToPage('PdfViewer');}}>
+                <ListItem icon button={true} onPress={() => { this.moveToPage('/PdfViewer');}}>
                   <Left>
                     <Icon type="FontAwesome" name="file-pdf-o"/>
                   </Left>
                   <Body>
                     <Text> PDF viewer </Text>
+                  </Body>
+                </ListItem>
+                <ListItem icon button={true} onPress={() => { this.moveToPage('/OnlinePDFs');}}>
+                  <Left>
+                    <Icon type="FontAwesome" name="file-pdf-o"/>
+                  </Left>
+                  <Body>
+                    <Text> Choose PDF (Development) </Text>
                   </Body>
                 </ListItem>
                 <ListItem icon button={true} onPress={() => { this.moveToPage('/FavouriteQuotes')}}>
