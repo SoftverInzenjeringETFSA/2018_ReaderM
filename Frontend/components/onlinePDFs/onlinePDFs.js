@@ -30,7 +30,7 @@ class OnlinePregledScreen extends Component{
       return (
         <View style={{flex:1}}>
 
-          <View style={{flex: 1, marginTop: 24, backgroundColor: '#3498DB', flexDirection: 'row', justifyContent: 'space-between'}}>
+          <View style={{height: 58, marginTop: 24, backgroundColor: '#3498DB', flexDirection: 'row', justifyContent: 'space-between'}}>
             <TouchableOpacity onPress={() => this.props.history.replace('/')}>
               <Icon type="Entypo" name="menu" style={{ color:'#fff', paddingLeft: 10, paddingTop: 14 }} />
             </TouchableOpacity>
@@ -54,7 +54,7 @@ class OnlinePregledScreen extends Component{
             />
           </View>
 
-          <View style={{flex: 1, flexDirection: 'row'}}>
+          <View style={{height: 58, flexDirection: 'row'}}>
             <Button style={{borderBottomWidth: 2, borderBottomColor: 'white', backgroundColor: '#3498DB', width: '50%', height: '100%'}}>
             <Text style={{color: 'white', fontSize: 18, paddingLeft: 30}}>Online documents</Text>
             </Button>
