@@ -3,29 +3,37 @@ import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native
 import { Container, Header, Content, Icon, Footer, FooterTab, Button, Left, Right } from 'native-base';
 
 class OnlinePregledScreen extends Component{
-    state = {
-      data: [{name: 'The Cathedral'}, {name: 'Ježeva kućica'}, {name: 'Unity Guide'}, {name: 'Osnove digitalnih računara'}]
-    };
-
+    constructor(props){
+      super(props);
+      this.state = { data: [{name : "Nesta"}]};
+      this.changeData = this.changeData.bind(this);
+      this.fetchData = this.fetchData.bind(this);
+    }
     componentWillMount(){
         this.fetchData();
     }
+    changeData(data) {
+      this.setState({ data: data });
+    }
 
-    fetchData = async () => {
-      const response = await fetch('http://localhost:3000/PregledDokumenata');
-      const json = await response.json();
-      this.setState({ data: json.ime });
-    };
-
-    chooseFile(){
-    options = {};
-    Expo.DocumentPicker.getDocumentAsync(options).then((result) =>{
-          console.log(result);
-          this.setState({ source: { uri: result.uri }})
+    fetchData = () => {
+      const ipadress = '192.168.1.84';
+      var httpRequest = new XMLHttpRequest();
+      var promjena = this.setState;
+      httpRequest.open("GET", "http://192.168.1.84:5000/listPdf");
+      httpRequest.onreadystatechange = function(){
+        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+          var res = httpRequest.responseText;
+          console.log(res);
+          res = JSON.parse(res);
+          if(res == null)
+            return;
+          console.log(res.data);
+          promjena({data: res.data});
         }
-    )
-  }
-
+      }
+      httpRequest.send();
+    };
     render() {
       return (
         <View style={{flex:1}}>
@@ -40,12 +48,12 @@ class OnlinePregledScreen extends Component{
 
           <View style={styles.zaslon}>
             <FlatList style={styles.lista}
-              data = {this.state.data}
+              data={(this.state.data == null)? []: this.state.data}
               keyExtractor = {(x, index) => index}
-              renderItem = {({item}) => <TouchableOpacity onPress={() => this.props.history.push({
+              renderItem = {({item}) => <TouchableOpacity onPress={() => { return ({
                                                                                                   pathname: '/PdfViewer',
                                                                                                   state: { detail: item.name }
-                                                                                                })}>
+                                                                                                })} }>
                                           <View style={styles.elementListe}>
                                             <Icon type="FontAwesome" name="file-pdf-o" />
                                             <Text style={{paddingLeft: 25, fontSize: 20}}>{item.name}</Text>
