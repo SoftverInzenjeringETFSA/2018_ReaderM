@@ -22,7 +22,7 @@ constructor(props){
 }
  saveToWeb(){
   console.log("Usao u funkciju spremi na web!");
-  fetch('http://192.168.0.13:5000/savePDF', { //moja ip adresa
+  fetch('http://192.168.0.13:5000/savePDF', { //IP adresa racunara 
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -55,7 +55,7 @@ constructor(props){
       <View style={{flex: 1}}>
         <TopHeader title={"Reader"} openDrawer={this.props.openDrawer }/>
         <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
-<<<<<<< HEAD
+
       {/*    <Pdf
             source={this.state.source}
             onLoadComplete={(numberOfPages,filePath)=>{
@@ -68,20 +68,7 @@ constructor(props){
                 console.log(error);
             }}
           style={styles.pdf}/> */}
-=======
-          <Pdf
-          source={this.state.source}
-          onLoadComplete={(numberOfPages,filePath)=>{
-            console.log(`number of pages: ${numberOfPages}`);
-          }}
-          onPageChanged={(page,numberOfPages)=>{
-            console.log(`current page: ${page}`);
-          }}
-          onError={(error)=>{
-            console.log(error);
-          }}
-          style={styles.pdf}/>
->>>>>>> 12905e83b37bcab1e31c3da051c44663e1c70a92
+
           <ActionButton buttonColor="rgba(231,76,60,1)">
             <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => { this.saveToDevice() }}>
               <Icon name="md-create" style={styles.actionButtonIcon} />
