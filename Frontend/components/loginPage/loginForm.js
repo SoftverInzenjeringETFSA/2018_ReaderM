@@ -55,7 +55,7 @@ export default class LoginForm extends Component{
           returnKeyType="go"
           style={styles.input}
         />
-        <TouchableOpacity style={styles.buttonContainer}  onPress={() => { this.onSubmit() }}>
+        <TouchableOpacity style={styles.buttonContainer} onPress={() => { this.onSubmit() }}>
           <Text style={styles.buttonText}>LOGIN</Text>
         </TouchableOpacity>
 
