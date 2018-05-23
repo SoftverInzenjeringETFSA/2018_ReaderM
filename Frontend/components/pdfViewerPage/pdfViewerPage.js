@@ -3,7 +3,7 @@ import { TouchableOpacity } from 'react-native';
 import { View, Icon } from 'native-base';
 import ActionButton from 'react-native-action-button';
 import TopHeader from '../topHeader/topHeader.js';
-import Pdf from 'react-native-pdf';
+//import Pdf from 'react-native-pdf';
 
 import styles from './style.js';
 
@@ -19,15 +19,16 @@ constructor(props){
 }
  saveToWeb(){
   console.log("Usao u funkciju spremi na web!");
-  fetch('http://192.168.0.13:5000/savePDF', {
+  fetch('http://192.168.0.13:5000/savePDF', { //moja ip adresa
     method: 'POST',
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      firstParam: 'yourValue',
-      secondParam: 'yourOtherValue',
+      ime: 'Babo',
+      opis: 'Babuka'
+      //id: '123' S obzirom da druga grupa nije odradila id, onda ga ne unosimo u bazu
       }),
     });
   }
@@ -49,7 +50,7 @@ constructor(props){
       <View style={{flex: 1}}>
         <TopHeader title={"Reader"} openDrawer={this.props.openDrawer }/>
         <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
-          <Pdf
+      {/*    <Pdf
             source={this.state.source}
             onLoadComplete={(numberOfPages,filePath)=>{
                 console.log(`number of pages: ${numberOfPages}`);
@@ -60,7 +61,7 @@ constructor(props){
             onError={(error)=>{
                 console.log(error);
             }}
-            style={styles.pdf}/>
+          style={styles.pdf}/> */}
           <ActionButton buttonColor="rgba(231,76,60,1)">
             <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => { this.saveToDevice() }}>
               <Icon name="md-create" style={styles.actionButtonIcon} />
