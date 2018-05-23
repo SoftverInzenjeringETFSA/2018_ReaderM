@@ -3,7 +3,7 @@ import { TouchableOpacity, WebView } from 'react-native';
 import { View, Icon } from 'native-base';
 import ActionButton from 'react-native-action-button';
 import TopHeader from '../topHeader/topHeader.js';
-//import Pdf from 'react-native-pdf';
+import Pdf from 'react-native-pdf';
 
 import styles from './style.js';
 
@@ -22,7 +22,7 @@ constructor(props){
 }
  saveToWeb(){
   console.log("Usao u funkciju spremi na web!");
-  fetch('http://192.168.0.13:5000/savePDF', { //IP adresa racunara 
+  fetch('http://192.168.0.13:5000/savePDF', { //IP adresa racunara
     method: 'POST',
     headers: {
       Accept: 'application/json',
@@ -45,10 +45,14 @@ constructor(props){
           }
       });
   }
-  chooseFile(){}
-    // Za pristup za nazivu pdf-a koji se učitava, koristiti {this.props.location.state.detail}
-
-
+  chooseFile(){
+    options = {};
+    Expo.DocumentPicker.getDocumentAsync(options).then((result) =>{
+          console.log(result);
+          this.setState({ source: { uri: result.uri }})
+        }
+   )
+  }
 
   render(){
     return(
@@ -56,7 +60,7 @@ constructor(props){
         <TopHeader title={"Reader"} openDrawer={this.props.openDrawer }/>
         <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
 
-      {/*    <Pdf
+          <Pdf
             source={this.state.source}
             onLoadComplete={(numberOfPages,filePath)=>{
                 console.log(`number of pages: ${numberOfPages}`);
@@ -67,7 +71,7 @@ constructor(props){
             onError={(error)=>{
                 console.log(error);
             }}
-          style={styles.pdf}/> */}
+          style={styles.pdf}/>
 
           <ActionButton buttonColor="rgba(231,76,60,1)">
             <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => { this.saveToDevice() }}>
