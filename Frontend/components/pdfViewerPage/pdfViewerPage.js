@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, WebView } from 'react-native';
 import { View, Icon } from 'native-base';
 import ActionButton from 'react-native-action-button';
 import TopHeader from '../topHeader/topHeader.js';
@@ -13,6 +13,9 @@ export default class PdfViewerPage extends Component{
 
 constructor(props){
   super(props)
+  var uri = {
+    html:"<html> <body><h1>To Open the <a href='http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/pdf_open_parameters.pdf'>PDF</a></h1></body></html>"
+  }
   this.state = { source: {uri:'http://samples.leanpub.com/thereactnativebook-sample.pdf', cache:true} };
   //this.state = { source: {uri:'',cache:true}}
 
@@ -44,23 +47,25 @@ constructor(props){
   chooseFile(){}
     // Za pristup za nazivu pdf-a koji se učitava, koristiti {this.props.location.state.detail}
 
+
+
   render(){
     return(
       <View style={{flex: 1}}>
         <TopHeader title={"Reader"} openDrawer={this.props.openDrawer }/>
         <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
           <Pdf
-            source={this.state.source}
-            onLoadComplete={(numberOfPages,filePath)=>{
-                console.log(`number of pages: ${numberOfPages}`);
-            }}
-            onPageChanged={(page,numberOfPages)=>{
-                console.log(`current page: ${page}`);
-            }}
-            onError={(error)=>{
-                console.log(error);
-            }}
-            style={styles.pdf}/>
+          source={this.state.source}
+          onLoadComplete={(numberOfPages,filePath)=>{
+            console.log(`number of pages: ${numberOfPages}`);
+          }}
+          onPageChanged={(page,numberOfPages)=>{
+            console.log(`current page: ${page}`);
+          }}
+          onError={(error)=>{
+            console.log(error);
+          }}
+          style={styles.pdf}/>
           <ActionButton buttonColor="rgba(231,76,60,1)">
             <ActionButton.Item buttonColor='#9b59b6' title="Save to device" onPress={() => { this.saveToDevice() }}>
               <Icon name="md-create" style={styles.actionButtonIcon} />

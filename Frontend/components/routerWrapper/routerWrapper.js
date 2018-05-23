@@ -17,7 +17,7 @@ import FavouriteQuotesPage from '../favouriteQuotesPage/favouriteQuotesPage.js';
 import Navigation from '../navigation/navigation.js';
 import Help from '../helpPage/helpPage.js';
 import OnlinePDFs from '../onlinePDFs/onlinePDFs.js';
-
+import StateManager from '../../models/StateManager.js';
 
 // history je objekat koji dolazi uz react-router-native
 // on posjeduje metode kao sto su goBack(), push() koji
@@ -27,7 +27,11 @@ const history = createHistory();
 export default class RouterWrapper extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      StateManager
+     }
   }
+  
   render(){
       closeDrawer = () => {
         this.drawer._root.close()
@@ -45,7 +49,12 @@ export default class RouterWrapper extends Component {
             <Switch>
               <Route exact path="/" component={() => <LoginPage openDrawer={ openDrawer } /> } />
               <Route exact path="/OnlinePDFs" component={() => <OnlinePDFs openDrawer={ openDrawer } /> } />
-              <Route exact path="/PdfViewer" component={() => <PdfViewerPage openDrawer={ openDrawer } /> } />
+              <Route exact path="/PdfViewer" component={() => {
+                  if(this.state.StateManager.isUriSet())
+                    return (<PdfViewerPage openDrawer={ openDrawer } />);
+                  else
+                    return (<OnlinePDFs openDrawer={ openDrawer } />);
+                } } />
               <Route exact path="/FavouriteQuotes" component={() => <FavouriteQuotesPage openDrawer={ openDrawer } /> } />
               <Route exact path="/Help" component={() => <Help openDrawer={ openDrawer } /> } />
             </Switch>

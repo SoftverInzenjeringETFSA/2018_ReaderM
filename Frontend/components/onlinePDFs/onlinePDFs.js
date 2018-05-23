@@ -3,26 +3,43 @@ import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native
 import { Container, Header, Content, Icon, Footer, FooterTab, Button, Left, Right } from 'native-base';
 
 class OnlinePregledScreen extends Component{
-    state = {
-      data: [{name: 'The Cathedral'}, {name: 'Ježeva kućica'}, {name: 'Unity Guide'}, {name: 'Osnove digitalnih računara'}]
-    };
-
+    constructor(props){
+      super(props);
+      this.state = { data: [{name : "Nesta"}]};
+      this.changeData = this.changeData.bind(this);
+      this.fetchData = this.fetchData.bind(this);
+    }
     componentWillMount(){
         this.fetchData();
     }
+    changeData(data) {
+      this.setState({ data: data });
+    }
 
-    fetchData = async () => {
-      const response = await fetch('http://localhost:3000/PregledDokumenata');
-      const json = await response.json();
-      this.setState({ data: json.ime });
+    fetchData = () => {
+      const ipadress = '192.168.1.84';
+      var httpRequest = new XMLHttpRequest();
+      var promjena = this.setState;
+      httpRequest.open("GET", "http://192.168.1.84:5000/listPdf");
+      httpRequest.onreadystatechange = function(){
+        if (httpRequest.readyState == 4 && httpRequest.status == 200) {
+          var res = httpRequest.responseText;
+          console.log(res);
+          res = JSON.parse(res);
+          if(res == null)
+            return;
+          console.log(res.data);
+          promjena({data: res.data});
+        }
+      }
+      httpRequest.send();
     };
-
     render() {
       return (
         <View style={{flex:1}}>
 
           <View style={{flex: 1, marginTop: 24, backgroundColor: '#3498DB', flexDirection: 'row', justifyContent: 'space-between'}}>
-            <TouchableOpacity onPress={() => this.props.history.replace('/')}>
+            <TouchableOpacity onPress={() => {}}>
               <Icon type="Entypo" name="menu" style={{ color:'#fff', paddingLeft: 10, paddingTop: 14 }} />
             </TouchableOpacity>
             <Text style={{color: 'white', fontSize: 22, paddingRight: 210, paddingTop: 14}}>Reader</Text>
@@ -31,12 +48,12 @@ class OnlinePregledScreen extends Component{
 
           <View style={styles.zaslon}>
             <FlatList style={styles.lista}
-              data = {this.state.data}
+              data={(this.state.data == null)? []: this.state.data}
               keyExtractor = {(x, index) => index}
-              renderItem = {({item}) => <TouchableOpacity onPress={() => this.props.history.push({
+              renderItem = {({item}) => <TouchableOpacity onPress={() => { return ({
                                                                                                   pathname: '/PdfViewer',
                                                                                                   state: { detail: item.name }
-                                                                                                })}>
+                                                                                                })} }>
                                           <View style={styles.elementListe}>
                                             <Icon type="FontAwesome" name="file-pdf-o" />
                                             <Text style={{paddingLeft: 25, fontSize: 20}}>{item.name}</Text>
@@ -44,7 +61,7 @@ class OnlinePregledScreen extends Component{
                                         </TouchableOpacity>}
             />
           </View>
-      
+
           <View style={{flex: 1, flexDirection: 'row'}}>
             <Button style={{borderBottomWidth: 2, borderBottomColor: 'white', backgroundColor: '#3498DB', width: '50%', height: '100%'}}>
             <Text style={{color: 'white', fontSize: 18, paddingLeft: 30}}>Online documents</Text>
