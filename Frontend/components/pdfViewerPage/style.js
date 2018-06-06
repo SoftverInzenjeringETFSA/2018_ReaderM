@@ -12,9 +12,13 @@ export default styles = StyleSheet.create({
     backgroundColor: '#3498DB',
     flexDirection: 'row',
     justifyContent: 'space-between'
+<<<<<<< HEAD
   },
   pdf: {
         flex: 11,
         width: Dimensions.get('window').width
     }
+=======
+  }
+>>>>>>> parent of 542451d... Popravljen frontend
 });

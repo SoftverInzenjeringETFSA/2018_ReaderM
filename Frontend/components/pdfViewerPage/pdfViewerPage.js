@@ -8,6 +8,23 @@ import Pdf from 'react-native-pdf';
 import styles from './style.js';
 
 
+<<<<<<< HEAD
+=======
+console.log("Usao u funkciju spremi na web!");
+fetch('http://192.168.0.13:5000/savePDF', {
+  method: 'POST',
+  headers: {
+    Accept: 'application/json',
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    ime: 'yourValue',
+    opis: 'yourOtherValue',
+    id: '145'
+    })
+  });
+}
+>>>>>>> parent of 542451d... Popravljen frontend
 
 export default class PdfViewerPage extends Component{
 
@@ -57,6 +74,7 @@ constructor(props){
   render(){
     return(
       <View style={{flex: 1}}>
+<<<<<<< HEAD
         <TopHeader title={"Reader"} openDrawer={this.props.openDrawer }/>
         <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
 
@@ -82,6 +100,25 @@ constructor(props){
             </ActionButton.Item>
               <ActionButton.Item buttonColor='#1abc9c' title="Save online"  onPress={() => { this.saveToWeb() }}>
               <Icon type="Entypo" name="save" style={styles.actionButtonIcon}/>
+=======
+        <View style={styles.header}>
+          <TouchableOpacity onPress={() => this.props.history.replace('/')}>
+            <Icon type="Entypo" name="menu" style={{ color:'#fff', paddingLeft: 10, paddingTop: 14 }} />
+          </TouchableOpacity>
+          <Text style={{color: 'white', fontSize: 22, paddingRight: 210, paddingTop: 14}}>Reader</Text>
+          <Icon type="Feather" name="search" style={{ color:'#fff', paddingRight: 16, paddingTop: 14 }}/>
+        </View>
+        <View style={{flex:11, backgroundColor: '#f3f3f3'}}>
+          <ActionButton buttonColor="#3498DB">
+            <ActionButton.Item buttonColor='rgba(231,76,60,1)' title="Mark text" onPress={() => {}}>
+              <Icon name="md-quote" style={styles.actionButtonIcon} />
+            </ActionButton.Item>
+            <ActionButton.Item buttonColor='#9b59b6' title="Save online" onPress={this.spremi_na_web}>
+              <Icon type="Entypo" name="save" style={styles.actionButtonIcon} />
+            </ActionButton.Item>
+              <ActionButton.Item buttonColor='#1abc9c' title="Save to device" onPress={() => {}}>
+              <Icon type="Entypo" name="download" style={styles.actionButtonIcon}/>
+>>>>>>> parent of 542451d... Popravljen frontend
             </ActionButton.Item>
           </ActionButton>
         </View>
