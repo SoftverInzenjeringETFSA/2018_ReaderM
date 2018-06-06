@@ -1,10 +1,3 @@
-/*
-  Autor: Muhamed Delalić
-  Ime: routerWrapper.js
-  Uloga: Ova komponenta se bavi sa navigacijom i promijenom trenutnih pogleda
-
-  TODO: Implamentirati autorizaciju za sve componente sem LoginPage-a
-*/
 import React, { Component } from 'react';
 import { Router, Route, Switch } from 'react-router-native';
 import createHistory from 'history/createMemoryHistory';
@@ -12,7 +5,6 @@ import { Drawer, Button, View, Text } from 'native-base';
 
 // Lista svih pogleda
 import LoginPage from '../loginPage/loginPage.js';
-import PdfViewerPage from '../pdfViewerPage/pdfViewerPage.js';
 import FavouriteQuotesPage from '../favouriteQuotesPage/favouriteQuotesPage.js';
 import Navigation from '../navigation/navigation.js';
 import Help from '../helpPage/helpPage.js';
@@ -49,7 +41,6 @@ export default class RouterWrapper extends Component {
             <Switch>
               <Route exact path="/" component={() => <LoginPage openDrawer={ openDrawer } /> } />
               <Route exact path="/OnlinePDFs" component={() => <OnlinePDFs openDrawer={ openDrawer } /> } />
-              <Route exact path="/PdfViewer" component={() => <PdfViewerPage openDrawer={ openDrawer } /> } />
               <Route exact path="/FavouriteQuotes" component={() => <FavouriteQuotesPage openDrawer={ openDrawer } /> } />
               <Route exact path="/Help" component={() => <Help openDrawer={ openDrawer } /> } />
             </Switch>
