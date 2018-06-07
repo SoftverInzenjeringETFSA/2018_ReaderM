@@ -8,13 +8,13 @@ Run
 ```
 npm install
 ```
-This command will install necessary modules for our app. <br>
+*This command will install necessary modules for our app.* <br>
 <br>
 After module installation, run
 ```
 npm start
 ```
-This command will start our app. <br>
+*This command will start our app.* <br>
 <br>
 Finally, scan the QR code using Expo on your device. <br>
 <br>
