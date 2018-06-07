@@ -48,21 +48,21 @@ class Help extends Component {
       )
     })
 
-    dependencies.forEach((dependencie, index) => {
+    dependencies.forEach((dependency, index) => {
       dependenciesJSX.push(
         <ListItem key={index}>
           <View>
             <Text style={styles.NormalText}>
               Name:&nbsp;
-              <Text style={styles.NestedText}>{dependencie.name}</Text>
+              <Text style={styles.NestedText}>{dependency.name}</Text>
             </Text>
             <Text style={styles.NormalText}>
               Description:&nbsp;
-              <Text style={styles.NestedText}>{dependencie.description}</Text> 
+              <Text style={styles.NestedText}>{dependency.description}</Text> 
             </Text>
             <Text style={styles.NormalText}>
               Link to docs:&nbsp;
-              <Text style={styles.Hyperlink}>{dependencie.doclink}</Text>
+              <Text style={styles.Hyperlink}>{dependency.doclink}</Text>
             </Text>
           </View>
         </ListItem>
