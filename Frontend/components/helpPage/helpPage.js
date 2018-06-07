@@ -1,102 +1,90 @@
-/*
-  Autor: Muhamed Delaić
-  Ime: helpPage.js
-  Uloga: Pogled namjenjen da pomogne developerima, sadrži listu svih controllera, modela i pogleda kao i dependency-a
-*/
+import React, { Component } from "react"
+import { 
+  Text, 
+  ScrollView
+} from "react-native"
+import {
+  Container,
+  Header,
+  Content,
+  Button,
+  Left,
+  Right,
+  Body,
+  Icon,
+  List,
+  ListItem,
+  Title,
+  View,
+  H1
+} from "native-base"
 
-import React, { Component } from 'react'
-import { Container, Header, Content, Button, Left, Right, Body, Icon, Text, List, ListItem, Title, View } from 'native-base';
-import TopHeader from '../topHeader/topHeader.js';
-
-import styles from './style.js';
+import TopHeader from "../topHeader/topHeader.js"
+import styles from "./style.js"
+import data from "../../data/help/data.json"
 
 
-export default class Help extends Component {
-
+class Help extends Component {
   render() {
-    var DependenciesItems = [];
-    var ComponentsItems = [];
+    const components = data.components
+    const dependencies = data.dependencies
+    const dependenciesJSX = []
+    const componentsJSX = []
 
-    for(var i = 0; i < Dependencies.length; i++){
-      DependenciesItems.push(
-        <ListItem key={"Dependencies " + i}>
-          <Body>
-            <Text style={styles.NormalText}>Name: <Text style={styles.NestedText}> {Dependencies[i].name} </Text> </Text>
-            <Text style={styles.NormalText}>Description: <Text style={styles.NestedText}> {Dependencies[i].description} </Text> </Text>
-            <Text style={styles.NormalText}>Link to docs:
-              <Text style={styles.Hyperlink}> {Dependencies[i].doclink} </Text>
+    components.forEach((component, index) => {
+      componentsJSX.push(
+        <ListItem key={index}>
+          <View>
+            <Text style={styles.NormalText}>
+              Name:&nbsp;  
+              <Text style={styles.NestedText}>{component.name}</Text> 
             </Text>
-          </Body>
+            <Text style={styles.NormalText}>
+              Description:&nbsp;  
+              <Text style={styles.NestedText}>{component.description}</Text> 
+            </Text>
+          </View>
         </ListItem>
       )
-    }
-    for(var i = 0; i < Components.length; i++){
-      ComponentsItems.push(
-        <ListItem key={"Components " + i}>
-          <Body>
-            <Text style={styles.NormalText}>Name: <Text style={styles.NestedText}> {Components[i].name} </Text> </Text>
-            <Text style={styles.NormalText}>Description: <Text style={styles.NestedText}> {Components[i].description} </Text> </Text>
-          </Body>
+    })
+
+    dependencies.forEach((dependencie, index) => {
+      dependenciesJSX.push(
+        <ListItem key={index}>
+          <View>
+            <Text style={styles.NormalText}>
+              Name:&nbsp;
+              <Text style={styles.NestedText}>{dependencie.name}</Text>
+            </Text>
+            <Text style={styles.NormalText}>
+              Description:&nbsp;
+              <Text style={styles.NestedText}>{dependencie.description}</Text> 
+            </Text>
+            <Text style={styles.NormalText}>
+              Link to docs:&nbsp;
+              <Text style={styles.Hyperlink}>{dependencie.doclink}</Text>
+            </Text>
+          </View>
         </ListItem>
       )
-    }
-    // <Header>
-    // <Left>
-    // <Button transparent onPress={() => {}}>
-    // <Icon type="Entypo"name="menu" style={{color:'#fff'}} />
-    // </Button>
-    // </Left>
-    // <Body>
-    // <Title style={styles.HeaderText}> Developer Help</Title>
-    // </Body>
-    // <Right />
-    // </Header>
+    })
 
     return (
-      <View style={{flex:1}}>
-        <TopHeader title="Dev Help" openDrawer={ openDrawer } />
-        <View style={{flex:11}} >
-          <List pointerEvents='box-only'>
-            <ListItem itemHeader>
-              <Text>Components </Text>
-            </ListItem>
-            {ComponentsItems}
-            <ListItem itemHeader>
-              <Text>Models </Text>
-            </ListItem>
-            <ListItem itemHeader>
-              <Text>Dependencies</Text>
-            </ListItem>
-            {DependenciesItems}
-          </List>
-        </View>
+      <View style={{ flex: 1 }}>
+        <TopHeader title="Dev Help" openDrawer={openDrawer} />
+        <ScrollView>
+          <View>
+            <H1>Components</H1>
+            {componentsJSX}
+          </View>
+          <View>
+            <H1>Dependencies</H1>
+            {dependenciesJSX}
+          </View>
+        </ScrollView>
       </View>
     )
   }
 }
 
-
-const Components = [
-  {name: "App Component", description: "Root of the application, hold all other components and handles loading of assets."},
-  {name: "RouterWrapper Component", description: "Handles all logic for routing and navigation"},
-  {name: "Navigation Component", description: "Sidebar view with all the logic."},
-  {name: "HelpPage Component", description: "Responsible for displaying the developer help view and storing describtions about each component and dependency." }
-];
-const Dependencies = [
-  {
-    name: "React Native",
-    description: "A javascript code library based on React that lets you build native Android and iOS applications.",
-    doclink: "facebook.github.io/react-native/docs/getting-started.html"
-  },
-  {
-    name: "Native Base",
-    description: "Open source UI component library for React Native.",
-    doclink: "docs.nativebase.io"
-  },
-  {
-    name: "React Router Native",
-    description: "React Router is a collection of navigational components that compose declaratively with your application.",
-    doclink: "reacttraining.com/react-router/native/"
-  }
-
-];
+export default Help

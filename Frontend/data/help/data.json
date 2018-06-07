@@ -1,0 +1,37 @@
+{
+  "components": [
+    {
+      "name": "App Component",
+      "description": "Root of the application, holds all other components and handles loading of assets."
+    },
+    {
+      "name": "RouterWrapper Component",
+      "description": "Handles all logic for routing and navigation"
+    },
+    {
+      "name": "Navigation Component",
+      "description": "Sidebar view with all the logic."
+    },
+    {
+      "name": "HelpPage Component",
+      "description": "Responsible for displaying the developer help view and storing describtions about each component and dependency."
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "React Native",
+      "description": "A javascript code library based on React that lets you build native Android and iOS applications.",
+      "doclink": "facebook.github.io/react-native/docs/getting-started.html"
+    },
+    {
+      "name": "Native Base",
+      "description": "Open source UI component library for React Native.",
+      "doclink": "docs.nativebase.io"
+    },
+    {
+      "name": "React Router Native",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "doclink": "reacttraining.com/react-router/native/"
+    }
+  ]
+}
