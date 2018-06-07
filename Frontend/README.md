@@ -14,6 +14,8 @@ After module installation, run
 ```
 npm start
 ```
-This command will start our app; scan the QR code using Expo on your device. <br>
+This command will start our app. <br>
+<br>
+Finally, scan the QR code using Expo on your device. <br>
 <br>
 *Note: If you don't see QR code displayed in VSCode integrated terminal, use some other terminal client.*
