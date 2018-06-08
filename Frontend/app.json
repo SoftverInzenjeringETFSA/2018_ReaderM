@@ -1,7 +1,8 @@
 {
   "expo": {
     "sdkVersion": "27.0.0",
-    "name": "Frontend",
+    "name": "ReaderM",
+    "description": "PDF Reader created with react native.",
     "slug": "frontend",
     "version": "0.1.0",
     "isDetached": true,
@@ -11,8 +12,7 @@
     "scheme": "exp84f9d936e1d94e31a5aadf512732584a",
     "android": {
       "package": "reader.m",
-      "publishBundlePath": "android\\app\\src\\main\\assets\\shell-app.bundle",
-      "publishManifestPath": "android\\app\\src\\main\\assets\\shell-app-manifest.json"
+      "publishBundlePath": "android\\app\\src\\main\\assets\\shell-app.bundle"
     }
   }
 }
