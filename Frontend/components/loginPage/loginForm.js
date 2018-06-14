@@ -7,6 +7,8 @@ import {
   Text,
   StatusBar
 } from "react-native"
+import axios from "axios"
+
 
 class LoginForm extends Component {
   constructor(props) {
@@ -14,7 +16,8 @@ class LoginForm extends Component {
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      loggedIn: "false"
     }
 
     this.handleChangeEmail = this.handleChangeEmail.bind(this)
@@ -35,13 +38,43 @@ class LoginForm extends Component {
   }
 
   onSubmit = async () => {
-    var response = await fetch(
-      `http://192.168.1.84:5000/Login?email=${this.state.email}&lozinka=${this.state.password}`
+    /*var response = await fetch(
+      `https://reader-si.herokuapp.com/login?email=${this.state.email}&lozinka=${this.state.password}`
+      //`http://192.168.1.84:5000/Login?email=${this.state.email}&lozinka=${this.state.password}`
     )
-    console.log(response)
+    console.log(response.url)*/
+    axios.get(`https://reader-si.herokuapp.com/login?email=${this.state.email}&lozinka=${this.state.password}`)
+  .then(function (response) {
+    console.log(response);
+    this.setState({
+      loggedIn: "true"
+    })
+  }.bind(this))
+  .catch(function (error) {
+    console.log(error);
+  });
+  }
+
+  onLogout = () => {
+    this.setState({
+      loggedIn: "false"
+    })
   }
 
   render() {
+    if(this.state.loggedIn == "true") {
+      return (
+        <View>
+        <TouchableOpacity
+          style={styles.buttonContainer}
+          onPress={() => this.onLogout()}
+        >
+        <Text style={styles.buttonText}>LOGOUT</Text>
+        </TouchableOpacity>
+        </View>
+      )
+    }
+    else {
     return (
       <View style={styles.container}>
         <StatusBar barStyle="light-content" />
@@ -72,6 +105,7 @@ class LoginForm extends Component {
         </TouchableOpacity>
       </View>
     );
+    }
   }
 }
 
